@@ -6,7 +6,7 @@
         {
           "playerName": "Dom Procopio",
           "player": "dom-procopio",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 14,
           "ab": 62,
           "h": 25,
@@ -24,7 +24,7 @@
         {
           "playerName": "Matt Kathan",
           "player": "matt-kathan",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 3,
           "ab": 16,
           "h": 10,
@@ -42,7 +42,7 @@
         {
           "playerName": "Warren Witsoe",
           "player": "warren-witsoe",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 31,
           "ab": 126,
           "h": 34,
@@ -60,7 +60,7 @@
         {
           "playerName": "Toby Van Tassel",
           "player": "toby-van-tassel",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 8,
           "ab": 26,
           "h": 8,
@@ -78,7 +78,7 @@
         {
           "playerName": "Kyle Kovak",
           "player": "kyle-kovak",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 6,
           "ab": 21,
           "h": 5,
@@ -96,7 +96,7 @@
         {
           "playerName": "Nate Bartch",
           "player": "nate-bartch",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 7,
           "ab": 40,
           "h": 18,
@@ -114,7 +114,7 @@
         {
           "playerName": "Nick Thede",
           "player": "nick-thede",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 10,
           "ab": 40,
           "h": 15,
@@ -137,7 +137,7 @@
         {
           "playerName": "Jon Brown",
           "player": "jon-brown",
-          "team": "NORTH",
+          "team": "North",
           "g": 46,
           "ab": 202,
           "h": 103,
@@ -155,7 +155,7 @@
         {
           "playerName": "Sam Procopio",
           "player": "sam-procopio",
-          "team": "NORTH",
+          "team": "North",
           "g": 51,
           "ab": 228,
           "h": 138,
@@ -173,7 +173,7 @@
         {
           "playerName": "Matt Miller",
           "player": "matt-miller",
-          "team": "NORTH",
+          "team": "North",
           "g": 35,
           "ab": 141,
           "h": 61,
@@ -191,7 +191,7 @@
         {
           "playerName": "Ollie Peterson",
           "player": "ollie-peterson",
-          "team": "NORTH",
+          "team": "North",
           "g": 36,
           "ab": 143,
           "h": 39,
@@ -209,7 +209,7 @@
         {
           "playerName": "Jeff Torrance",
           "player": "jeff-torrance",
-          "team": "NORTH",
+          "team": "North",
           "g": 24,
           "ab": 97,
           "h": 30,
@@ -227,7 +227,7 @@
         {
           "playerName": "Casey Granston",
           "player": "casey-granston",
-          "team": "NORTH",
+          "team": "North",
           "g": 23,
           "ab": 72,
           "h": 27,
@@ -245,7 +245,7 @@
         {
           "playerName": "David Fisher",
           "player": "david-fisher",
-          "team": "NORTH",
+          "team": "North",
           "g": 31,
           "ab": 126,
           "h": 47,
@@ -263,7 +263,7 @@
         {
           "playerName": "Shea Robinson",
           "player": "shea-robinson",
-          "team": "NORTH",
+          "team": "North",
           "g": 5,
           "ab": 21,
           "h": 6,
@@ -286,7 +286,7 @@
         {
           "playerName": "Cameron Headley",
           "player": "cameron-headley",
-          "team": "425'S",
+          "team": "425's",
           "g": 42,
           "ab": 161,
           "h": 57,
@@ -304,7 +304,7 @@
         {
           "playerName": "Jeff Ahern",
           "player": "jeff-ahern",
-          "team": "425'S",
+          "team": "425's",
           "g": 59,
           "ab": 224,
           "h": 68,
@@ -322,7 +322,7 @@
         {
           "playerName": "Kellen Sundin",
           "player": "kellen-sundin",
-          "team": "425'S",
+          "team": "425's",
           "g": 37,
           "ab": 136,
           "h": 55,
@@ -340,7 +340,7 @@
         {
           "playerName": "Grant Feek",
           "player": "grant-feek",
-          "team": "425'S",
+          "team": "425's",
           "g": 2,
           "ab": 6,
           "h": 1,
@@ -358,7 +358,7 @@
         {
           "playerName": "Mike McCutcheon",
           "player": "mike-mccutcheon",
-          "team": "425'S",
+          "team": "425's",
           "g": 2,
           "ab": 6,
           "h": 2,
@@ -376,7 +376,7 @@
         {
           "playerName": "Erik Schmella",
           "player": "erik-schmella",
-          "team": "425'S",
+          "team": "425's",
           "g": 2,
           "ab": 7,
           "h": 4,
@@ -394,7 +394,7 @@
         {
           "playerName": "Chris Cunningham",
           "player": "chris-cunningham",
-          "team": "425'S",
+          "team": "425's",
           "g": 42,
           "ab": 147,
           "h": 45,
@@ -412,7 +412,7 @@
         {
           "playerName": "Jay Blazey",
           "player": "jay-blazey",
-          "team": "425'S",
+          "team": "425's",
           "g": 20,
           "ab": 72,
           "h": 18,
@@ -430,7 +430,7 @@
         {
           "playerName": "Stephan Gray",
           "player": "stephan-gray",
-          "team": "425'S",
+          "team": "425's",
           "g": 27,
           "ab": 92,
           "h": 30,
@@ -448,7 +448,7 @@
         {
           "playerName": "Ben Morris",
           "player": "ben-morris",
-          "team": "425'S",
+          "team": "425's",
           "g": 2,
           "ab": 8,
           "h": 2,
@@ -466,7 +466,7 @@
         {
           "playerName": "Matt Morgan",
           "player": "matt-morgan",
-          "team": "425'S",
+          "team": "425's",
           "g": 27,
           "ab": 91,
           "h": 29,
@@ -484,7 +484,7 @@
         {
           "playerName": "Nate Monroe",
           "player": "nate-monroe",
-          "team": "425'S",
+          "team": "425's",
           "g": 11,
           "ab": 28,
           "h": 1,
@@ -502,7 +502,7 @@
         {
           "playerName": "Eric Omlin",
           "player": "eric-omlin",
-          "team": "425'S",
+          "team": "425's",
           "g": 5,
           "ab": 23,
           "h": 11,
@@ -520,7 +520,7 @@
         {
           "playerName": "Jonathan Tran",
           "player": "jonathan-tran",
-          "team": "425'S",
+          "team": "425's",
           "g": 10,
           "ab": 41,
           "h": 25,
@@ -543,7 +543,7 @@
         {
           "playerName": "Gunnar Peterson",
           "player": "gunnar-peterson",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 19,
           "ab": 73,
           "h": 26,
@@ -561,7 +561,7 @@
         {
           "playerName": "Zak Downing",
           "player": "zak-downing",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 31,
           "ab": 103,
           "h": 27,
@@ -579,7 +579,7 @@
         {
           "playerName": "Chris Choi",
           "player": "chris-choi",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 2,
           "ab": 9,
           "h": 3,
@@ -597,7 +597,7 @@
         {
           "playerName": "Matt Gasperich",
           "player": "matt-gasperich",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 3,
           "ab": 14,
           "h": 3,
@@ -620,7 +620,7 @@
         {
           "playerName": "Nick Woodward",
           "player": "nick-woodward",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 50,
           "ab": 216,
           "h": 107,
@@ -638,7 +638,7 @@
         {
           "playerName": "Pat Hopps",
           "player": "pat-hopps",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 41,
           "ab": 171,
           "h": 72,
@@ -656,7 +656,7 @@
         {
           "playerName": "Sleepy Hopps",
           "player": "sleepy-hopps",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 48,
           "ab": 191,
           "h": 94,
@@ -674,7 +674,7 @@
         {
           "playerName": "Brian Woodward",
           "player": "brian-woodward",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 41,
           "ab": 170,
           "h": 87,
@@ -692,7 +692,7 @@
         {
           "playerName": "Jack Groseclose",
           "player": "jack-groseclose",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 3,
           "ab": 12,
           "h": 5,
@@ -710,7 +710,7 @@
         {
           "playerName": "Tyson Sixkiller",
           "player": "tyson-sixkiller",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 13,
           "ab": 47,
           "h": 12,
@@ -728,7 +728,7 @@
         {
           "playerName": "Jeff Bonar",
           "player": "jeff-bonar",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 8,
           "ab": 33,
           "h": 10,
@@ -751,7 +751,7 @@
         {
           "playerName": "Mike Broom",
           "player": "mike-broom",
-          "team": "MAGNOLIA",
+          "team": "Magnolia",
           "g": 2,
           "ab": 9,
           "h": 3,
@@ -769,7 +769,7 @@
         {
           "playerName": "Tim Burhamn",
           "player": "tim-burhamn",
-          "team": "MAGNOLIA",
+          "team": "Magnolia",
           "g": 2,
           "ab": 7,
           "h": 1,
@@ -787,7 +787,7 @@
         {
           "playerName": "Steve DeShazo",
           "player": "steve-deshazo",
-          "team": "MAGNOLIA",
+          "team": "Magnolia",
           "g": 2,
           "ab": 7,
           "h": 0,
@@ -810,7 +810,7 @@
         {
           "playerName": "Scott Gordon",
           "player": "scott-gordon",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 14,
           "ab": 53,
           "h": 20,
@@ -828,7 +828,7 @@
         {
           "playerName": "CJ Castillo",
           "player": "cj-castillo",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 6,
           "ab": 22,
           "h": 6,
@@ -846,7 +846,7 @@
         {
           "playerName": "Blade Imsande",
           "player": "blade-imsande",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 14,
           "ab": 52,
           "h": 18,
@@ -864,7 +864,7 @@
         {
           "playerName": "Reed Hunter",
           "player": "reed-hunter",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 27,
           "ab": 100,
           "h": 35,
@@ -882,7 +882,7 @@
         {
           "playerName": "Marcus Reed",
           "player": "marcus-reed",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 4,
           "ab": 20,
           "h": 7,
@@ -900,7 +900,7 @@
         {
           "playerName": "Dirk Erickson",
           "player": "dirk-erickson",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 4,
           "ab": 5,
           "h": 1,
@@ -918,7 +918,7 @@
         {
           "playerName": "Sean Shoemaker",
           "player": "sean-shoemaker",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 4,
           "ab": 20,
           "h": 11,
@@ -936,7 +936,7 @@
         {
           "playerName": "Andrew Jordan",
           "player": "andrew-jordan",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 4,
           "ab": 10,
           "h": 5,
@@ -961,7 +961,7 @@
         {
           "playerName": "Dom Procopio",
           "player": "dom-procopio",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 13,
           "ip": 20,
           "w": 3,
@@ -979,7 +979,7 @@
         {
           "playerName": "Warren Witsoe",
           "player": "warren-witsoe",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 16,
           "ip": 27.333,
           "w": 6,
@@ -997,7 +997,7 @@
         {
           "playerName": "Kyle Kovak",
           "player": "kyle-kovak",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 1,
           "ip": 1,
           "w": 0,
@@ -1015,7 +1015,7 @@
         {
           "playerName": "Nate Bartch",
           "player": "nate-bartch",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 2,
           "ip": 1,
           "w": 0,
@@ -1033,7 +1033,7 @@
         {
           "playerName": "Nick Thede",
           "player": "nick-thede",
-          "team": "NORTHWEST",
+          "team": "Northwest",
           "g": 9,
           "ip": 9.67,
           "w": 1,
@@ -1056,7 +1056,7 @@
         {
           "playerName": "Jon Brown",
           "player": "jon-brown",
-          "team": "NORTH",
+          "team": "North",
           "g": 42,
           "ip": 66.333,
           "w": 10,
@@ -1074,7 +1074,7 @@
         {
           "playerName": "Sam Procopio",
           "player": "sam-procopio",
-          "team": "NORTH",
+          "team": "North",
           "g": 33,
           "ip": 39.664,
           "w": 5,
@@ -1092,7 +1092,7 @@
         {
           "playerName": "Matt Miller",
           "player": "matt-miller",
-          "team": "NORTH",
+          "team": "North",
           "g": 27,
           "ip": 42.003,
           "w": 7,
@@ -1110,7 +1110,7 @@
         {
           "playerName": "Ollie Peterson",
           "player": "ollie-peterson",
-          "team": "NORTH",
+          "team": "North",
           "g": 9,
           "ip": 9.337,
           "w": 2,
@@ -1128,7 +1128,7 @@
         {
           "playerName": "Jeff Torrance",
           "player": "jeff-torrance",
-          "team": "NORTH",
+          "team": "North",
           "g": 20,
           "ip": 27,
           "w": 0,
@@ -1146,7 +1146,7 @@
         {
           "playerName": "Casey Granston",
           "player": "casey-granston",
-          "team": "NORTH",
+          "team": "North",
           "g": 15,
           "ip": 20.33,
           "w": 2,
@@ -1164,7 +1164,7 @@
         {
           "playerName": "David Fisher",
           "player": "david-fisher",
-          "team": "NORTH",
+          "team": "North",
           "g": 25,
           "ip": 24,
           "w": 3,
@@ -1187,7 +1187,7 @@
         {
           "playerName": "Cameron Headley",
           "player": "cameron-headley",
-          "team": "425'S",
+          "team": "425's",
           "g": 42,
           "ip": 73,
           "w": 3,
@@ -1205,7 +1205,7 @@
         {
           "playerName": "Grant Feek",
           "player": "grant-feek",
-          "team": "425'S",
+          "team": "425's",
           "g": 1,
           "ip": 2,
           "w": 0,
@@ -1223,7 +1223,7 @@
         {
           "playerName": "Erik Schmella",
           "player": "erik-schmella",
-          "team": "425'S",
+          "team": "425's",
           "g": 1,
           "ip": 2,
           "w": 0,
@@ -1241,7 +1241,7 @@
         {
           "playerName": "Jay Blazey",
           "player": "jay-blazey",
-          "team": "425'S",
+          "team": "425's",
           "g": 20,
           "ip": 25.33,
           "w": 4,
@@ -1259,7 +1259,7 @@
         {
           "playerName": "Kellen Sundin",
           "player": "kellen-sundin",
-          "team": "425'S",
+          "team": "425's",
           "g": 23,
           "ip": 24.333,
           "w": 5,
@@ -1277,7 +1277,7 @@
         {
           "playerName": "Chris Cunningham",
           "player": "chris-cunningham",
-          "team": "425'S",
+          "team": "425's",
           "g": 9,
           "ip": 7.67,
           "w": 0,
@@ -1295,7 +1295,7 @@
         {
           "playerName": "Stephan Gray",
           "player": "stephan-gray",
-          "team": "425'S",
+          "team": "425's",
           "g": 6,
           "ip": 5,
           "w": 0,
@@ -1313,7 +1313,7 @@
         {
           "playerName": "Matt Morgan",
           "player": "matt-morgan",
-          "team": "425'S",
+          "team": "425's",
           "g": 10,
           "ip": 10.667,
           "w": 2,
@@ -1331,7 +1331,7 @@
         {
           "playerName": "Jeff Ahern",
           "player": "jeff-ahern",
-          "team": "425'S",
+          "team": "425's",
           "g": 18,
           "ip": 25,
           "w": 1,
@@ -1349,7 +1349,7 @@
         {
           "playerName": "Eric Omlin",
           "player": "eric-omlin",
-          "team": "425'S",
+          "team": "425's",
           "g": 3,
           "ip": 7,
           "w": 1,
@@ -1367,7 +1367,7 @@
         {
           "playerName": "Jonathan Tran",
           "player": "jonathan-tran",
-          "team": "425'S",
+          "team": "425's",
           "g": 8,
           "ip": 8,
           "w": 1,
@@ -1390,7 +1390,7 @@
         {
           "playerName": "Gunnar Peterson",
           "player": "gunnar-peterson",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 7,
           "ip": 4.003,
           "w": 0,
@@ -1408,7 +1408,7 @@
         {
           "playerName": "Zak Downing",
           "player": "zak-downing",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 26,
           "ip": 28,
           "w": 2,
@@ -1426,7 +1426,7 @@
         {
           "playerName": "Matt Gasperich",
           "player": "matt-gasperich",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 1,
           "ip": 1,
           "w": 0,
@@ -1444,7 +1444,7 @@
         {
           "playerName": "Nate Monroe",
           "player": "nate-monroe",
-          "team": "NORTHEAST",
+          "team": "Northeast",
           "g": 1,
           "ip": 1,
           "w": 0,
@@ -1467,7 +1467,7 @@
         {
           "playerName": "Nick Woodward",
           "player": "nick-woodward",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 42,
           "ip": 64.667,
           "w": 17,
@@ -1485,7 +1485,7 @@
         {
           "playerName": "Pat Hopps",
           "player": "pat-hopps",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 13,
           "ip": 12.667,
           "w": 1,
@@ -1503,7 +1503,7 @@
         {
           "playerName": "Sleepy Hopps",
           "player": "sleepy-hopps",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 48,
           "ip": 72.333,
           "w": 5,
@@ -1521,7 +1521,7 @@
         {
           "playerName": "Brian Woodward",
           "player": "brian-woodward",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 38,
           "ip": 51.333,
           "w": 7,
@@ -1539,7 +1539,7 @@
         {
           "playerName": "Tyson Sixkiller",
           "player": "tyson-sixkiller",
-          "team": "QUEEN ANNE",
+          "team": "Queen Anne",
           "g": 8,
           "ip": 10,
           "w": 2,
@@ -1562,7 +1562,7 @@
         {
           "playerName": "Scott Gordon",
           "player": "scott-gordon",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 14,
           "ip": 20,
           "w": 1,
@@ -1580,7 +1580,7 @@
         {
           "playerName": "CJ Castillo",
           "player": "cj-castillo",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 5,
           "ip": 6,
           "w": 0,
@@ -1598,7 +1598,7 @@
         {
           "playerName": "Reed Hunter",
           "player": "reed-hunter",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 7,
           "ip": 5,
           "w": 1,
@@ -1616,7 +1616,7 @@
         {
           "playerName": "Marcus Reed",
           "player": "marcus-reed",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 2,
           "ip": 2,
           "w": 0,
@@ -1634,7 +1634,7 @@
         {
           "playerName": "Sean Shoemaker",
           "player": "sean-shoemaker",
-          "team": "SEATTLE",
+          "team": "Seattle",
           "g": 2,
           "ip": 2,
           "w": 0,
@@ -1657,7 +1657,7 @@
         {
           "playerName": "Steve DeShazo",
           "player": "steve-deshazo",
-          "team": "MAGNOLIA",
+          "team": "Magnolia",
           "g": 2,
           "ip": 4,
           "w": 0,

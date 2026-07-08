@@ -15,15 +15,24 @@ interface Props {
 }
 
 const { columns, caption, dense, stickyColumns } = Astro.props;
+
+const captionId = caption ? `table-caption-${caption.replace(/\s+/g, '-').toLowerCase()}` : undefined;
 ---
 
+{
+	caption && (
+		<p id={captionId} class="mb-2 text-left text-sm font-semibold text-ink-muted">
+			{caption}
+		</p>
+	)
+}
 <div class="overflow-x-auto">
 	<table
 		data-sortable-table
 		data-sticky-columns={stickyColumns || undefined}
+		aria-labelledby={captionId}
 		class:list={[dense && '[&_th]:px-2 [&_th]:py-1.5 [&_td]:px-2 [&_td]:py-1.5']}
 	>
-		{caption && <caption class="mb-2 text-left text-sm font-semibold text-ink-muted">{caption}</caption>}
 		<thead>
 			<tr>
 				{
@@ -62,8 +71,22 @@ const { columns, caption, dense, stickyColumns } = Astro.props;
 		table[data-sticky-columns='3'] thead th:nth-child(-n + 3),
 		table[data-sticky-columns='3'] tbody td:nth-child(-n + 3) {
 			position: sticky;
-			z-index: 1;
 			background: white;
+		}
+
+		/* earlier (more leftward) sticky columns always paint above later ones, so a subpixel
+		   rounding overlap never hides an earlier column's content (e.g. the Rank sort arrow) */
+		table[data-sticky-columns] thead th:nth-child(1),
+		table[data-sticky-columns] tbody td:nth-child(1) {
+			z-index: 3;
+		}
+		table[data-sticky-columns] thead th:nth-child(2),
+		table[data-sticky-columns] tbody td:nth-child(2) {
+			z-index: 2;
+		}
+		table[data-sticky-columns='3'] thead th:nth-child(3),
+		table[data-sticky-columns='3'] tbody td:nth-child(3) {
+			z-index: 1;
 		}
 
 		/* frozen-boundary shadow on the last sticky column, only when the table actually overflows */
@@ -158,7 +181,9 @@ const { columns, caption, dense, stickyColumns } = Astro.props;
 					table.tBodies[0]?.querySelectorAll<HTMLElement>(`tr > :nth-child(${i + 1})`).forEach((c) => {
 						c.style.left = `${left}px`;
 					});
-					left += th.getBoundingClientRect().width;
+					// round up so subpixel measurement never leaves the next sticky column
+					// undershooting into this one (which would hide its content, e.g. the sort arrow)
+					left += Math.ceil(th.getBoundingClientRect().width);
 				}
 				table.toggleAttribute('data-overflowing', wrapper.scrollWidth > wrapper.clientWidth);
 			};

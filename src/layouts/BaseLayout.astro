@@ -35,28 +35,30 @@ const currentPath = Astro.url.pathname;
 		<title>{title} · Bonopio</title>
 	</head>
 	<body class="flex min-h-screen flex-col">
-		<SiteHeader />
-		{subNavItems && subNavItems.length > 0 && (
-			<nav aria-label="Section" class="border-b border-gray-300 bg-gray-200">
-				<div class="mx-auto max-w-5xl overflow-x-auto px-4">
-					<ul class="flex flex-nowrap gap-x-2 py-2 text-sm font-medium sm:flex-wrap">
-						{subNavItems.map((item) => (
-							<li class="shrink-0">
-								<a
-									href={item.href}
-									class:list={[
-										'inline-block whitespace-nowrap rounded-full px-3 py-1 no-underline hover:bg-white/70',
-										currentPath === item.href ? 'bg-black text-white hover:bg-black' : 'text-ink',
-									]}
-								>
-									{item.label}
-								</a>
-							</li>
-						))}
-					</ul>
-				</div>
-			</nav>
-		)}
+		<div class="sticky top-0 z-50">
+			<SiteHeader />
+			{subNavItems && subNavItems.length > 0 && (
+				<nav aria-label="Section" class="border-b border-gray-300 bg-gray-200">
+					<div class="mx-auto max-w-5xl overflow-x-auto px-4">
+						<ul class="flex flex-nowrap gap-x-2 py-2 text-sm font-medium sm:flex-wrap">
+							{subNavItems.map((item) => (
+								<li class="shrink-0">
+									<a
+										href={item.href}
+										class:list={[
+											'inline-block whitespace-nowrap rounded-full px-3 py-1 no-underline hover:bg-white/70',
+											currentPath === item.href ? 'bg-black text-white hover:bg-black' : 'text-ink',
+										]}
+									>
+										{item.label}
+									</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				</nav>
+			)}
+		</div>
 		<main class="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
 			<slot />
 		</main>
