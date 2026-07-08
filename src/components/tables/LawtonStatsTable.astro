@@ -1,0 +1,63 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { LawtonStatLine } from '../../content/schemas/lawton';
+
+interface Props {
+	stats: LawtonStatLine[];
+	showTeam?: boolean;
+	showTitles?: boolean;
+}
+
+const { stats, showTeam = true, showTitles = false } = Astro.props;
+
+const num = { type: 'number' as const, align: 'center' as const };
+
+const columns = [
+	{ key: 'rank', label: 'Rank', ...num, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	...(showTeam ? [{ key: 'team', label: 'Team' }] : []),
+	...(showTitles ? [{ key: 'rings', label: 'Titles', ...num }] : []),
+	{ key: 'g', label: 'G', ...num },
+	{ key: 'w', label: 'W', ...num },
+	{ key: 'winPct', label: 'W%', ...num },
+	{ key: 'pf', label: 'PF', ...num },
+	{ key: 'pa', label: 'PA', ...num },
+	{ key: 'plusMinus', label: '+/-', ...num },
+	{ key: 'war', label: 'WAR', ...num },
+	{ key: 'pts', label: 'PTS', ...num },
+	{ key: 'ppg', label: 'PPG', ...num },
+];
+
+// rank is derived, not stored: best WAR in this table = rank 1
+const rankByPlayerName = new Map(
+	[...stats]
+		.sort((a, b) => (b.war ?? -Infinity) - (a.war ?? -Infinity))
+		.map((row, i) => [row.playerName, i + 1]),
+);
+
+const stickyColumns = (showTeam ? 3 : 2) as 2 | 3;
+---
+
+<SortableTable columns={columns} caption="Player stats" stickyColumns={stickyColumns}>
+	{
+		stats.map((row) => (
+			<tr>
+				<td class="text-center">{rankByPlayerName.get(row.playerName)}</td>
+				<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+				{showTeam && <td>{row.team ?? '—'}</td>}
+				{showTitles && <td class="text-center">{row.rings}</td>}
+				<td class="text-center">{row.g ?? '—'}</td>
+				<td class="text-center">{row.w ?? '—'}</td>
+				<td class="text-center" data-sort-value={row.winPct ?? ''}>
+					{row.winPct !== undefined ? `${Math.round(row.winPct * 100)}%` : '—'}
+				</td>
+				<td class="text-center">{row.pf ?? '—'}</td>
+				<td class="text-center">{row.pa ?? '—'}</td>
+				<td class="text-center">{row.plusMinus ?? '—'}</td>
+				<td class="text-center">{row.war !== undefined ? row.war.toFixed(1) : '—'}</td>
+				<td class="text-center">{row.pts ?? '—'}</td>
+				<td class="text-center">{row.ppg !== undefined ? row.ppg.toFixed(1) : '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

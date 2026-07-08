@@ -1,0 +1,38 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { BowlTeamTotals } from '../../content/schemas/bowl';
+
+interface Props {
+	rows: BowlTeamTotals[];
+}
+
+const { rows } = Astro.props;
+
+const columns = [
+	{ key: 'team', label: 'Team' },
+	{ key: 'receptions', label: 'Receptions', type: 'number' as const, align: 'center' as const },
+	{ key: 'touchdowns', label: 'TD', type: 'number' as const, align: 'center' as const },
+	{ key: 'kicks', label: 'KA/KM' },
+	{ key: 'tackles', label: 'Tackles', type: 'number' as const, align: 'center' as const },
+	{ key: 'sacks', label: 'Sacks', type: 'number' as const, align: 'center' as const },
+	{ key: 'interceptions', label: 'INT', type: 'number' as const, align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Team totals">
+	{
+		rows.map((row) => (
+			<tr>
+				<td>{row.team}</td>
+				<td class="text-center">{row.receptions ?? '—'}</td>
+				<td class="text-center">{row.touchdowns ?? '—'}</td>
+				<td class="text-center">
+					{row.kickAttempts ?? '—'}/{row.kickMakes ?? '—'}
+				</td>
+				<td class="text-center">{row.tackles ?? '—'}</td>
+				<td class="text-center">{row.sacks ?? '—'}</td>
+				<td class="text-center">{row.interceptions ?? '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

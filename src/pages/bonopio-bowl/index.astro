@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SortableTable from '../../components/tables/SortableTable.astro';
+
+const editions = (await getCollection('bowlEditions')).sort((a, b) => a.data.edition.localeCompare(b.data.edition));
+const [career] = await getCollection('bowlCareer');
+const careerRows = career.data.rows;
+
+function topThree(key: 'titles' | 'war') {
+	return [...careerRows]
+		.filter((r) => r[key] !== undefined)
+		.sort((a, b) => (b[key] as number) - (a[key] as number))
+		.slice(0, 3)
+		.map((r) => ({ playerName: r.playerName, value: r[key] as number }));
+}
+
+const leaderCards = [
+	{ label: 'Most Titles', leaders: topThree('titles'), format: (v: number) => `${v} title${v === 1 ? '' : 's'}` },
+	{ label: 'Best WAR', leaders: topThree('war'), format: (v: number) => `${v.toFixed(1)} WAR` },
+];
+
+const subNavItems = [
+	{ label: 'Bonopio.com Bowl', href: '/bonopio-bowl/' },
+	...editions.map((e) => ({ label: `Bowl ${e.data.edition}`, href: `/bonopio-bowl/${e.id}/` })),
+];
+
+const columns = [
+	{ key: 'rank', label: 'Rank', type: 'number' as const, align: 'center' as const, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'titles', label: 'Titles', type: 'number' as const, align: 'center' as const },
+	{ key: 'touchdowns', label: 'TDs', type: 'number' as const, align: 'center' as const },
+	{ key: 'combineStars', label: 'Combine', align: 'center' as const },
+	{ key: 'war', label: 'WAR', type: 'number' as const, align: 'center' as const },
+];
+
+// rank is derived, not stored: best WAR in this table = rank 1
+const rankByPlayer = new Map(
+	[...careerRows].sort((a, b) => (b.war ?? -Infinity) - (a.war ?? -Infinity)).map((row, i) => [row.player?.id ?? row.playerName, i + 1]),
+);
+---
+
+<BaseLayout title="Bonopio.com Bowl" subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">Bonopio.com Bowl</h1>
+	<p class="mb-6 text-ink-muted">Football, I · II · III.</p>
+
+	<h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">All-time leaders</h2>
+	<ul class="mb-8 grid gap-3 sm:grid-cols-2">
+		{
+			leaderCards.map((card) => (
+				<li>
+					<a
+						href="#career"
+						class="block h-full rounded-lg border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-4 no-underline transition hover:border-brand hover:shadow-md"
+					>
+						<p class="mb-2 text-xs font-semibold uppercase tracking-wide text-brand">{card.label}</p>
+						{card.leaders.length > 0 ? (
+							<ol class="space-y-1">
+								{card.leaders.map((leader, i) => (
+									<li class="flex items-baseline justify-between gap-2 text-sm whitespace-nowrap">
+										<span class="text-ink">
+											<span class="text-ink-muted">{i + 1}.</span> {leader.playerName}
+										</span>
+										<span class="shrink-0 text-ink-muted">{card.format(leader.value)}</span>
+									</li>
+								))}
+							</ol>
+						) : (
+							<p class="text-sm text-ink-muted">No data yet</p>
+						)}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+
+	<h2 id="career" class="mb-3 scroll-mt-4 text-sm font-semibold uppercase tracking-wide text-ink-muted">
+		Career Stats
+	</h2>
+	<SortableTable columns={columns} caption="Career leaderboard" stickyColumns={2}>
+		{
+			careerRows.map((row) => (
+				<tr>
+					<td class="text-center">{rankByPlayer.get(row.player?.id ?? row.playerName)}</td>
+					<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+					<td class="text-center">{row.titles ?? '—'}</td>
+					<td class="text-center">{row.touchdowns ?? '—'}</td>
+					<td class="text-center">{row.combineStars ? '★'.repeat(row.combineStars) : '—'}</td>
+					<td class="text-center">{row.war !== undefined ? row.war.toFixed(1) : '—'}</td>
+				</tr>
+			))
+		}
+	</SortableTable>
+</BaseLayout>

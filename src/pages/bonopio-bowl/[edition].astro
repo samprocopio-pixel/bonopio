@@ -1,0 +1,58 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BowlScoreTable from '../../components/tables/BowlScoreTable.astro';
+import BowlTeamTotalsTable from '../../components/tables/BowlTeamTotalsTable.astro';
+import BowlStatLeadersTable from '../../components/tables/BowlStatLeadersTable.astro';
+import BowlCombineTable from '../../components/tables/BowlCombineTable.astro';
+
+export async function getStaticPaths() {
+	const editions = await getCollection('bowlEditions');
+	return editions.map((edition) => ({
+		params: { edition: edition.id },
+		props: { edition, allEditions: editions },
+	}));
+}
+
+const { edition, allEditions } = Astro.props;
+const sortedEditions = [...allEditions].sort((a, b) => a.data.edition.localeCompare(b.data.edition));
+const subNavItems = [
+	{ label: 'Bonopio.com Bowl', href: '/bonopio-bowl/' },
+	...sortedEditions.map((e) => ({ label: `Bowl ${e.data.edition}`, href: `/bonopio-bowl/${e.id}/` })),
+];
+const playerOfTheGame = await getEntry(edition.data.playerOfTheGame);
+---
+
+<BaseLayout title={edition.data.title} subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">{edition.data.title}</h1>
+	{playerOfTheGame && (
+		<p class="mb-6 text-sm font-semibold text-rank-gold">
+			Player of the Game: <a href={`/players/${playerOfTheGame.id}/`}>{playerOfTheGame.data.name}</a>
+		</p>
+	)}
+
+	<div class="space-y-8">
+		<BowlScoreTable rows={edition.data.finalScore} />
+		<BowlTeamTotalsTable rows={edition.data.teamTotals} />
+		<BowlStatLeadersTable rows={edition.data.statLeaders} />
+		{edition.data.combineRankings && <BowlCombineTable rows={edition.data.combineRankings} />}
+	</div>
+
+	<section class="mt-8 grid gap-6 sm:grid-cols-2">
+		{
+			edition.data.rosters.map((roster) => (
+				<div>
+					<h2 class="mb-2 font-semibold">{roster.team}</h2>
+					<ul class="list-inside list-disc text-sm">
+						{roster.picks.map((pick) => (
+							<li>
+								{pick.player ? <a href={`/players/${pick.player.id}/`}>{pick.playerName}</a> : pick.playerName}
+								{pick.war !== undefined && <span class="text-ink-muted"> — WAR {pick.war.toFixed(1)}</span>}
+							</li>
+						))}
+					</ul>
+				</div>
+			))
+		}
+	</section>
+</BaseLayout>

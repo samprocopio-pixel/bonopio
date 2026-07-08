@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+	<rect x="0" y="0" width="160" height="160" rx="28" fill="#ffffff" />
+	<text
+		x="50"
+		y="114"
+		text-anchor="middle"
+		font-family="'Times New Roman', Times, Georgia, serif"
+		font-weight="700"
+		font-size="100"
+		fill="#111111"
+	>B</text>
+	<text
+		x="110"
+		y="114"
+		text-anchor="middle"
+		font-family="'Times New Roman', Times, Georgia, serif"
+		font-weight="700"
+		font-size="100"
+		fill="#111111"
+	>P</text>
+</svg>

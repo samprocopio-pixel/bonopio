@@ -1,0 +1,34 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { LawtonScheduleRow } from '../../content/schemas/lawton';
+
+interface Props {
+	schedule: LawtonScheduleRow[];
+}
+
+const { schedule } = Astro.props;
+
+const columns = [
+	{ key: 'game', label: 'Game #', type: 'number' as const, align: 'center' as const, defaultSort: 'asc' as const },
+	{ key: 'round', label: 'Round' },
+	{ key: 'home', label: 'Home' },
+	{ key: 'homeScore', label: 'Score', type: 'number' as const, align: 'center' as const },
+	{ key: 'away', label: 'Away' },
+	{ key: 'awayScore', label: 'Score', type: 'number' as const, align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Schedule & results">
+	{
+		schedule.map((row) => (
+			<tr>
+				<td class="text-center">{row.game}</td>
+				<td>{row.round ?? 'Group'}</td>
+				<td>{row.home}</td>
+				<td class="text-center">{row.homeScore ?? '—'}</td>
+				<td>{row.away}</td>
+				<td class="text-center">{row.awayScore ?? '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

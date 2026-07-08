@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LawtonStatsTable from '../../components/tables/LawtonStatsTable.astro';
+import LawtonStandingsTable from '../../components/tables/LawtonStandingsTable.astro';
+import LawtonScheduleTable from '../../components/tables/LawtonScheduleTable.astro';
+
+export async function getStaticPaths() {
+	const seasons = await getCollection('lawtonSeasons');
+	return seasons.map((season) => ({
+		params: { year: String(season.data.year) },
+		props: { season, allSeasons: seasons },
+	}));
+}
+
+const { season, allSeasons } = Astro.props;
+const sortedSeasons = [...allSeasons].sort((a, b) => b.data.year - a.data.year);
+
+const subNavItems = [
+	{ label: 'Lawton Career', href: '/lawton/' },
+	...sortedSeasons.map((s) => ({ label: String(s.data.year), href: `/lawton/${s.data.year}/` })),
+];
+---
+
+<BaseLayout title={`Lawton ${season.data.year}`} subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">Lawton — {season.data.year}</h1>
+
+	<div class="space-y-8">
+		<LawtonStandingsTable standings={season.data.standings} />
+		<LawtonStatsTable stats={season.data.stats} />
+		<LawtonScheduleTable schedule={season.data.schedule} />
+	</div>
+</BaseLayout>

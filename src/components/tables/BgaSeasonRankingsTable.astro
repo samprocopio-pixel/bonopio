@@ -1,0 +1,40 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { BgaIndividualRanking } from '../../content/schemas/bga';
+
+interface Props {
+	rankings: BgaIndividualRanking[];
+}
+
+const { rankings } = Astro.props;
+
+const columns = [
+	{ key: 'rank', label: 'Rank', type: 'number' as const, align: 'center' as const, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'interbay', label: 'Interbay', type: 'number' as const, align: 'center' as const },
+	{ key: 'jackson', label: 'Jackson', type: 'number' as const, align: 'center' as const },
+	{ key: 'jefferson', label: 'Jefferson', type: 'number' as const, align: 'center' as const },
+	{ key: 'greenlake', label: 'Greenlake', type: 'number' as const, align: 'center' as const },
+	{ key: 'avg', label: 'Avg Placement', type: 'number' as const, align: 'center' as const },
+	{ key: 'war', label: 'WAR', type: 'number' as const, align: 'center' as const },
+	{ key: 'totalPoints', label: 'Total Points', type: 'number' as const, align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Individual rankings" stickyColumns={2}>
+	{
+		rankings.map((row) => (
+			<tr>
+				<td class="text-center">{row.rank ?? '—'}</td>
+				<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+				<td class="text-center">{row.interbay ?? '—'}</td>
+				<td class="text-center">{row.jackson ?? '—'}</td>
+				<td class="text-center">{row.jefferson ?? '—'}</td>
+				<td class="text-center">{row.greenlake ?? '—'}</td>
+				<td class="text-center">{row.avg ?? '—'}</td>
+				<td class="text-center">{row.war !== undefined ? row.war.toFixed(1) : '—'}</td>
+				<td class="text-center">{row.totalPoints ?? '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

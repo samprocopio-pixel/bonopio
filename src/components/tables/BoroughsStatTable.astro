@@ -1,0 +1,111 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { HittingLine, PitchingLine } from '../../content/schemas/boroughs';
+
+interface Props {
+	kind: 'hitting' | 'pitching';
+	byRegion: { region: string; rows: (HittingLine | PitchingLine)[] }[];
+}
+
+const { kind, byRegion } = Astro.props;
+
+const num = { type: 'number' as const, align: 'center' as const };
+
+const hittingColumns = [
+	{ key: 'rank', label: 'Rank', ...num, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'team', label: 'Team' },
+	{ key: 'g', label: 'G', ...num },
+	{ key: 'ab', label: 'AB', ...num },
+	{ key: 'h', label: 'H', ...num },
+	{ key: 'bb', label: 'BB', ...num },
+	{ key: 'single', label: '1B', ...num },
+	{ key: 'double', label: '2B', ...num },
+	{ key: 'hr', label: 'HR', ...num },
+	{ key: 'r', label: 'R', ...num },
+	{ key: 'rbi', label: 'RBI', ...num },
+	{ key: 'k', label: 'K', ...num },
+	{ key: 'avg', label: 'AVG', ...num },
+	{ key: 'obp', label: 'OBP', ...num },
+	{ key: 'war', label: 'WAR', ...num },
+];
+
+const pitchingColumns = [
+	{ key: 'rank', label: 'Rank', ...num, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'team', label: 'Team' },
+	{ key: 'g', label: 'G', ...num },
+	{ key: 'ip', label: 'IP', ...num },
+	{ key: 'w', label: 'W', ...num },
+	{ key: 'l', label: 'L', ...num },
+	{ key: 's', label: 'S', ...num },
+	{ key: 'h', label: 'H', ...num },
+	{ key: 'er', label: 'ER', ...num },
+	{ key: 'bb', label: 'BB', ...num },
+	{ key: 'k', label: 'K', ...num },
+	{ key: 'hr', label: 'HR', ...num },
+	{ key: 'whip', label: 'WHIP', ...num },
+	{ key: 'era', label: 'ERA', ...num },
+	{ key: 'war', label: 'WAR', ...num },
+];
+
+const columns = kind === 'hitting' ? hittingColumns : pitchingColumns;
+
+const rows = byRegion.flatMap((group) => group.rows);
+
+// rank is derived, not stored: best WAR in this table = rank 1
+const rankByPlayerName = new Map(
+	[...rows]
+		.sort((a, b) => (b.war ?? -Infinity) - (a.war ?? -Infinity))
+		.map((row, i) => [row.playerName, i + 1]),
+);
+---
+
+<SortableTable columns={columns} caption={kind === 'hitting' ? 'Hitting' : 'Pitching'} dense stickyColumns={3}>
+	{
+		rows.map((row) => (
+			<tr>
+				<td class="text-center">{rankByPlayerName.get(row.playerName)}</td>
+				<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+				<td>{row.team ?? '—'}</td>
+				{kind === 'hitting' ? (
+					<Fragment>
+						<td class="text-center">{(row as HittingLine).g ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).ab ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).h ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).bb ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).single ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).double ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).hr ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).r ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).rbi ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).k ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).avg ?? '—'}</td>
+						<td class="text-center">{(row as HittingLine).obp ?? '—'}</td>
+						<td class="text-center">
+							{(row as HittingLine).war !== undefined ? (row as HittingLine).war!.toFixed(1) : '—'}
+						</td>
+					</Fragment>
+				) : (
+					<Fragment>
+						<td class="text-center">{(row as PitchingLine).g ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).ip ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).w ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).l ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).s ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).h ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).er ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).bb ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).k ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).hr ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).whip ?? '—'}</td>
+						<td class="text-center">{(row as PitchingLine).era ?? '—'}</td>
+						<td class="text-center">
+							{(row as PitchingLine).war !== undefined ? (row as PitchingLine).war!.toFixed(1) : '—'}
+						</td>
+					</Fragment>
+				)}
+			</tr>
+		))
+	}
+</SortableTable>

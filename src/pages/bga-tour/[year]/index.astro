@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BgaSeasonRankingsTable from '../../../components/tables/BgaSeasonRankingsTable.astro';
+import BgaTeamRankingsTable from '../../../components/tables/BgaTeamRankingsTable.astro';
+
+export async function getStaticPaths() {
+	const seasons = await getCollection('bgaSeasons');
+	return seasons.map((season) => ({
+		params: { year: String(season.data.year) },
+		props: { season, allSeasons: seasons },
+	}));
+}
+
+const { season, allSeasons } = Astro.props;
+const sortedSeasons = [...allSeasons].sort((a, b) => b.data.year - a.data.year);
+
+const subNavItems = [
+	{ label: 'BGA Tour Career', href: '/bga-tour/' },
+	...sortedSeasons.map((s) => ({ label: String(s.data.year), href: `/bga-tour/${s.data.year}/` })),
+];
+---
+
+<BaseLayout title={`BGA Tour ${season.data.year}`} subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">BGA Tour — {season.data.year}</h1>
+
+	{
+		season.data.venues.length > 0 && (
+			<p class="mb-6 text-sm text-ink-muted">
+				Venues:
+				{season.data.venues.map((venue, i) => (
+					<>
+						{i > 0 && ', '}
+						<a href={`/bga-tour/${season.data.year}/${venue.toLowerCase()}/`}>{venue}</a>
+					</>
+				))}
+			</p>
+		)
+	}
+
+	<div class="space-y-8">
+		<BgaSeasonRankingsTable rankings={season.data.individualRankings} />
+		{season.data.teamRankings.length > 0 && <BgaTeamRankingsTable rankings={season.data.teamRankings} />}
+	</div>
+</BaseLayout>

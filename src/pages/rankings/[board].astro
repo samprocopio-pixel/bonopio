@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RankBadge from '../../components/rankings/RankBadge.astro';
+import { getRankingBoards } from '../../lib/rankings';
+
+export async function getStaticPaths() {
+	const boards = await getRankingBoards();
+	return boards.map((board) => ({
+		params: { board: board.slug },
+		props: { board },
+	}));
+}
+
+const { board } = Astro.props;
+---
+
+<BaseLayout title={board.title}>
+	<h1 class="text-2xl font-bold">{board.title}</h1>
+	<p class="mt-1 text-ink-muted">{board.description}</p>
+
+	<div class="mt-6 overflow-x-auto">
+		<table>
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Player</th>
+					<th>Value</th>
+				</tr>
+			</thead>
+			<tbody>
+				{
+					board.rows.map((row) => (
+						<tr>
+							<td>
+								<RankBadge rank={row.rank} />
+							</td>
+							<td>
+								{row.playerSlug ? <a href={`/players/${row.playerSlug}/`}>{row.playerName}</a> : row.playerName}
+							</td>
+							<td>{row.value}</td>
+						</tr>
+					))
+				}
+			</tbody>
+		</table>
+	</div>
+</BaseLayout>

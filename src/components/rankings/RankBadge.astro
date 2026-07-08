@@ -1,0 +1,28 @@
+---
+interface Props {
+	rank: number;
+}
+
+const { rank } = Astro.props;
+
+const styles: Record<number, { bg: string; border: string; text: string; medal: string }> = {
+	1: { bg: 'bg-rank-gold-bg', border: 'border-rank-gold', text: 'text-rank-gold', medal: '🥇' },
+	2: { bg: 'bg-rank-silver-bg', border: 'border-rank-silver', text: 'text-rank-silver', medal: '🥈' },
+	3: { bg: 'bg-rank-bronze-bg', border: 'border-rank-bronze', text: 'text-rank-bronze', medal: '🥉' },
+};
+
+const style = styles[rank];
+---
+
+{
+	style ? (
+		<span class={`inline-flex items-center gap-1 rounded-full border ${style.border} ${style.bg} ${style.text} px-2 py-0.5 text-xs font-semibold`}>
+			<span aria-hidden="true">{style.medal}</span>
+			{rank}
+		</span>
+	) : (
+		<span class="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-2 py-0.5 text-xs font-medium text-ink-muted">
+			{rank}
+		</span>
+	)
+}

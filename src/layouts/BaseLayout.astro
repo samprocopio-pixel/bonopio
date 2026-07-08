@@ -1,0 +1,65 @@
+---
+import SiteHeader from '../components/nav/SiteHeader.astro';
+import SiteFooter from '../components/nav/SiteFooter.astro';
+import '../styles/global.css';
+
+interface SubNavItem {
+	label: string;
+	href: string;
+}
+
+interface Props {
+	title: string;
+	description?: string;
+	subNavItems?: SubNavItem[];
+}
+
+const { title, description = "We like sports and we don't care who knows.", subNavItems } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-title" content="Bonopio" />
+		<meta name="theme-color" content="#000000" />
+		<title>{title} · Bonopio</title>
+	</head>
+	<body class="flex min-h-screen flex-col">
+		<SiteHeader />
+		{subNavItems && subNavItems.length > 0 && (
+			<nav aria-label="Section" class="border-b border-gray-300 bg-gray-200">
+				<div class="mx-auto max-w-5xl overflow-x-auto px-4">
+					<ul class="flex flex-nowrap gap-x-2 py-2 text-sm font-medium sm:flex-wrap">
+						{subNavItems.map((item) => (
+							<li class="shrink-0">
+								<a
+									href={item.href}
+									class:list={[
+										'inline-block whitespace-nowrap rounded-full px-3 py-1 no-underline hover:bg-white/70',
+										currentPath === item.href ? 'bg-black text-white hover:bg-black' : 'text-ink',
+									]}
+								>
+									{item.label}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			</nav>
+		)}
+		<main class="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
+			<slot />
+		</main>
+		<SiteFooter />
+	</body>
+</html>

@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BgaVenueResultsTable from '../../../components/tables/BgaVenueResultsTable.astro';
+import BgaVenueTeamResultsTable from '../../../components/tables/BgaVenueTeamResultsTable.astro';
+
+export async function getStaticPaths() {
+	const venues = await getCollection('bgaVenues');
+	const seasons = await getCollection('bgaSeasons');
+	return venues.map((venue) => {
+		const [year, venueSlug] = venue.id.split('/');
+		return {
+			params: { year, venue: venueSlug },
+			props: { venue, seasons },
+		};
+	});
+}
+
+const { venue, seasons } = Astro.props;
+const sortedSeasons = [...seasons].sort((a, b) => b.data.year - a.data.year);
+
+const subNavItems = [
+	{ label: 'BGA Tour Career', href: '/bga-tour/' },
+	...sortedSeasons.map((s) => ({ label: String(s.data.year), href: `/bga-tour/${s.data.year}/` })),
+];
+---
+
+<BaseLayout title={`${venue.data.venue} ${venue.data.year}`} subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">
+		{venue.data.venue} — {venue.data.year}
+	</h1>
+	<p class="mb-6">
+		<a href={`/bga-tour/${venue.data.year}/`}>&larr; Back to {venue.data.year} season</a>
+	</p>
+
+	<div class="space-y-8">
+		<BgaVenueResultsTable results={venue.data.individualResults} />
+		<BgaVenueTeamResultsTable results={venue.data.teamResults} />
+	</div>
+</BaseLayout>

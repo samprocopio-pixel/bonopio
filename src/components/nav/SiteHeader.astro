@@ -1,0 +1,44 @@
+---
+const navLinks = [
+	{ label: 'Lawton', href: '/lawton/' },
+	{ label: 'Boroughs', href: '/boroughs/' },
+	{ label: 'BGA', href: '/bga-tour/' },
+	{ label: 'Bonopio Bowl', href: '/bonopio-bowl/' },
+	{ label: 'Players', href: '/players/' },
+];
+
+const currentPath = Astro.url.pathname;
+const isActive = (href: string) => currentPath === href || currentPath.startsWith(href);
+---
+
+<header class="bg-black text-white">
+	<div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-4 py-4">
+		<a href="/" class="shrink-0 text-xl font-bold tracking-tight text-white no-underline hover:text-white">
+			Bonopio
+		</a>
+		<div class="flex min-w-0 items-center gap-4">
+			<nav aria-label="Primary" class="min-w-0">
+				<ul class="flex flex-nowrap gap-x-5 overflow-x-auto text-sm font-medium sm:flex-wrap sm:overflow-visible">
+					{
+						navLinks.map((link) => (
+							<li class="shrink-0">
+								<a
+									href={link.href}
+									class:list={[
+										'inline-block whitespace-nowrap rounded-full px-3 py-1 no-underline',
+										isActive(link.href) ? 'bg-white text-black' : 'text-white/80 hover:bg-white/10 hover:text-white',
+									]}
+								>
+									{link.label}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</nav>
+			<a href="/" class="shrink-0 no-underline" aria-label="Bonopio home">
+				<img src="/favicon.svg" alt="" class="h-8 w-8" />
+			</a>
+		</div>
+	</div>
+</header>

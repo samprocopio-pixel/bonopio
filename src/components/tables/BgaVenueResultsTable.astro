@@ -1,0 +1,28 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { BgaVenueIndividualResult } from '../../content/schemas/bga';
+
+interface Props {
+	results: BgaVenueIndividualResult[];
+}
+
+const { results } = Astro.props;
+
+const columns = [
+	{ key: 'rank', label: 'Rank', type: 'number' as const, align: 'center' as const, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'par', label: 'Par', type: 'number' as const, align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Individual results" stickyColumns={2}>
+	{
+		results.map((row) => (
+			<tr>
+				<td class="text-center">{row.rank ?? '—'}</td>
+				<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+				<td class="text-center">{row.par ?? '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

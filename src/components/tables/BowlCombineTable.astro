@@ -1,0 +1,30 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { CombineRow } from '../../content/schemas/bowl';
+
+interface Props {
+	rows: CombineRow[];
+}
+
+const { rows } = Astro.props;
+
+const columns = [
+	{ key: 'rank', label: 'Rank', type: 'number' as const, align: 'center' as const, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'stars', label: 'Stars', type: 'number' as const, align: 'center' as const },
+	{ key: 'grade', label: 'Grade', type: 'number' as const, align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Combine rankings" stickyColumns={2}>
+	{
+		rows.map((row) => (
+			<tr>
+				<td class="text-center">{row.rank}</td>
+				<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+				<td class="text-center">{'★'.repeat(row.stars)}{'☆'.repeat(5 - row.stars)}</td>
+				<td class="text-center">{row.grade}</td>
+			</tr>
+		))
+	}
+</SortableTable>

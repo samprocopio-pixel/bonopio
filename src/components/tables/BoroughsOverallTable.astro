@@ -1,0 +1,71 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { BoroughsOverallRow } from '../../content/schemas/boroughs';
+
+interface Props {
+	rows: BoroughsOverallRow[];
+}
+
+const { rows } = Astro.props;
+
+const num = { type: 'number' as const, align: 'center' as const };
+
+const columns = [
+	{ key: 'rank', label: 'Rank', ...num, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'team', label: 'Team' },
+	{ key: 'g', label: 'G', ...num },
+	{ key: 'teamWins', label: 'Team W', ...num },
+	{ key: 'championships', label: 'Titles', ...num },
+	{ key: 'ab', label: 'AB', ...num },
+	{ key: 'h', label: 'H', ...num },
+	{ key: 'hr', label: 'HR', ...num },
+	{ key: 'r', label: 'R', ...num },
+	{ key: 'rbi', label: 'RBI', ...num },
+	{ key: 'avg', label: 'AVG', ...num },
+	{ key: 'hittingWar', label: 'Hit WAR', ...num },
+	{ key: 'gp', label: 'GP', ...num },
+	{ key: 'pitchingK', label: 'K', ...num },
+	{ key: 'pitchingW', label: 'W', ...num },
+	{ key: 'whip', label: 'WHIP', ...num },
+	{ key: 'era', label: 'ERA', ...num },
+	{ key: 'pitchingWar', label: 'P WAR', ...num },
+	{ key: 'totalWar', label: 'Total WAR', ...num },
+];
+
+// rank is derived, not stored: best total WAR in this table = rank 1
+const rankByPlayerName = new Map(
+	[...rows]
+		.sort((a, b) => (b.totalWar ?? -Infinity) - (a.totalWar ?? -Infinity))
+		.map((row, i) => [row.playerName, i + 1]),
+);
+---
+
+<SortableTable columns={columns} caption="Overall" stickyColumns={3}>
+	{
+		rows.map((row) => (
+			<tr>
+				<td class="text-center">{rankByPlayerName.get(row.playerName)}</td>
+				<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+				<td>{row.team ?? '—'}</td>
+				<td class="text-center">{row.g ?? '—'}</td>
+				<td class="text-center">{row.teamWins ?? '—'}</td>
+				<td class="text-center">{row.championships ?? '—'}</td>
+				<td class="text-center">{row.ab ?? '—'}</td>
+				<td class="text-center">{row.h ?? '—'}</td>
+				<td class="text-center">{row.hr ?? '—'}</td>
+				<td class="text-center">{row.r ?? '—'}</td>
+				<td class="text-center">{row.rbi ?? '—'}</td>
+				<td class="text-center">{row.avg ?? '—'}</td>
+				<td class="text-center">{row.hittingWar !== undefined ? row.hittingWar.toFixed(1) : '—'}</td>
+				<td class="text-center">{row.gp ?? '—'}</td>
+				<td class="text-center">{row.pitchingK ?? '—'}</td>
+				<td class="text-center">{row.pitchingW ?? '—'}</td>
+				<td class="text-center">{row.whip ?? '—'}</td>
+				<td class="text-center">{row.era ?? '—'}</td>
+				<td class="text-center">{row.pitchingWar !== undefined ? row.pitchingWar.toFixed(1) : '—'}</td>
+				<td class="text-center">{row.totalWar !== undefined ? row.totalWar.toFixed(1) : '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

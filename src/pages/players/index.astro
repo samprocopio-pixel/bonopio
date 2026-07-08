@@ -1,0 +1,155 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SortableTable from '../../components/tables/SortableTable.astro';
+
+const players = await getCollection('players');
+const nameBySlug = new Map(players.map((p) => [p.id, p.data.name]));
+
+const [lawtonCareer] = await getCollection('lawtonCareer');
+const [boroughsCareer] = await getCollection('boroughsCareer');
+const [bgaCareer] = await getCollection('bgaCareer');
+const [bowlCareer] = await getCollection('bowlCareer');
+const bowlEditions = await getCollection('bowlEditions');
+
+interface Row {
+	slug: string;
+	name: string;
+	lawton?: number;
+	boroughs?: number;
+	bga?: number;
+	bowl?: number;
+	rings: number;
+	wins: number;
+	appearances: number;
+}
+
+const bySlug = new Map<string, Row>();
+function entryFor(slug: string, fallbackName: string) {
+	if (!bySlug.has(slug)) bySlug.set(slug, { slug, name: nameBySlug.get(slug) ?? fallbackName, rings: 0, wins: 0, appearances: 0 });
+	return bySlug.get(slug)!;
+}
+
+for (const row of lawtonCareer.data.stats) {
+	if (!row.player) continue;
+	const entry = entryFor(row.player.id, row.playerName);
+	entry.lawton = row.war;
+	entry.rings += row.rings ?? 0;
+	entry.wins += row.w ?? 0;
+	entry.appearances += row.g ?? 0;
+}
+for (const row of boroughsCareer.data.overall) {
+	if (!row.player) continue;
+	const entry = entryFor(row.player.id, row.playerName);
+	entry.boroughs = row.totalWar;
+	entry.rings += row.championships ?? 0;
+	entry.wins += row.teamWins ?? 0;
+	entry.appearances += row.g ?? 0;
+}
+for (const row of bgaCareer.data.rows) {
+	if (!row.player) continue;
+	const entry = entryFor(row.player.id, `${row.firstName} ${row.lastName}`);
+	entry.bga = row.war;
+	entry.appearances += row.byVenueYear.length;
+}
+for (const row of bowlCareer.data.rows) {
+	if (!row.player) continue;
+	const entry = entryFor(row.player.id, row.playerName);
+	entry.bowl = row.war;
+	entry.rings += row.titles ?? 0;
+}
+for (const edition of bowlEditions) {
+	const slugsThisEdition = new Set(
+		edition.data.rosters.flatMap((r) => r.picks).map((pick) => pick.player?.id).filter((id): id is string => Boolean(id)),
+	);
+	for (const slug of slugsThisEdition) {
+		const entry = bySlug.get(slug);
+		if (entry) entry.appearances += 1;
+	}
+}
+
+const rows = [...bySlug.values()]
+	.map((r) => ({ ...r, total: (r.lawton ?? 0) + (r.boroughs ?? 0) + (r.bga ?? 0) + (r.bowl ?? 0) }))
+	.sort((a, b) => b.total - a.total);
+
+function topFive<K extends 'rings' | 'wins' | 'appearances' | 'total' | 'lawton' | 'boroughs' | 'bga'>(
+	key: K,
+	opts: { ascending?: boolean; requirePresent?: boolean } = {},
+) {
+	return [...rows]
+		.filter((r) => !opts.requirePresent || r[key] !== undefined)
+		.sort((a, b) => (opts.ascending ? (a[key] as number) - (b[key] as number) : (b[key] as number) - (a[key] as number)))
+		.slice(0, 5)
+		.map((r) => ({ slug: r.slug, name: r.name, value: r[key] as number }));
+}
+
+const leaderCards = [
+	{ label: 'Most Championship Rings', leaders: topFive('rings'), format: (v: number) => `${v} ring${v === 1 ? '' : 's'}` },
+	{ label: 'Most Combined Appearances', leaders: topFive('appearances'), format: (v: number) => `${v}` },
+	{ label: 'Top WAR Across All Sports', leaders: topFive('total'), format: (v: number) => `${v.toFixed(1)} WAR` },
+	{ label: 'Most Wins Across All Leagues', leaders: topFive('wins'), format: (v: number) => `${v} wins` },
+	{ label: 'Top 5 BGA WAR', leaders: topFive('bga', { requirePresent: true }), format: (v: number) => `${v.toFixed(1)} WAR` },
+	{ label: 'Top 5 Boroughs Total WAR', leaders: topFive('boroughs', { requirePresent: true }), format: (v: number) => `${v.toFixed(1)} WAR` },
+	{ label: 'Top 5 Lawton WAR', leaders: topFive('lawton', { requirePresent: true }), format: (v: number) => `${v.toFixed(1)} WAR` },
+	{ label: 'Bottom 5 Total WAR', leaders: topFive('total', { ascending: true }), format: (v: number) => `${v.toFixed(1)} WAR` },
+];
+
+const num = { type: 'number' as const, align: 'center' as const };
+
+const columns = [
+	{ key: 'rank', label: 'Rank', ...num, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'lawton', label: 'Lawton', ...num },
+	{ key: 'boroughs', label: 'Boroughs', ...num },
+	{ key: 'bga', label: 'BGA', ...num },
+	{ key: 'bowl', label: 'Bonopio Bowl', ...num },
+	{ key: 'total', label: 'Total WAR', ...num },
+];
+---
+
+<BaseLayout title="Players">
+	<h1 class="mb-6 text-2xl font-bold">Players</h1>
+
+	<h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">All-time leaders</h2>
+	<ul class="mb-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+		{
+			leaderCards.map((card) => (
+				<li class="rounded-lg border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-4">
+					<p class="mb-2 text-xs font-semibold uppercase tracking-wide text-brand">{card.label}</p>
+					{card.leaders.length > 0 ? (
+						<ol class="space-y-1">
+							{card.leaders.map((leader, i) => (
+								<li class="flex items-baseline justify-between gap-2 text-sm whitespace-nowrap">
+									<span class="text-ink">
+										<span class="text-ink-muted">{i + 1}.</span> <a href={`/players/${leader.slug}/`}>{leader.name}</a>
+									</span>
+									<span class="shrink-0 text-ink-muted">{card.format(leader.value)}</span>
+								</li>
+							))}
+						</ol>
+					) : (
+						<p class="text-sm text-ink-muted">No data yet</p>
+					)}
+				</li>
+			))
+		}
+	</ul>
+
+	<SortableTable columns={columns} caption="All-time WAR leaderboard" stickyColumns={2}>
+		{
+			rows.map((row, i) => (
+				<tr>
+					<td class="text-center">{i + 1}</td>
+					<td>
+						<a href={`/players/${row.slug}/`}>{row.name}</a>
+					</td>
+					<td class="text-center">{row.lawton !== undefined ? row.lawton.toFixed(1) : '—'}</td>
+					<td class="text-center">{row.boroughs !== undefined ? row.boroughs.toFixed(1) : '—'}</td>
+					<td class="text-center">{row.bga !== undefined ? row.bga.toFixed(1) : '—'}</td>
+					<td class="text-center">{row.bowl !== undefined ? row.bowl.toFixed(1) : '—'}</td>
+					<td class="text-center">{row.total.toFixed(1)}</td>
+				</tr>
+			))
+		}
+	</SortableTable>
+</BaseLayout>

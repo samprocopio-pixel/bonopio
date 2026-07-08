@@ -1,0 +1,28 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { BgaVenueTeamResult } from '../../content/schemas/bga';
+
+interface Props {
+	results: BgaVenueTeamResult[];
+}
+
+const { results } = Astro.props;
+
+const columns = [
+	{ key: 'team', label: 'Team' },
+	{ key: 'rounds', label: 'Round scores' },
+	{ key: 'total', label: 'Total', type: 'number' as const, align: 'center' as const, defaultSort: 'desc' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Team results">
+	{
+		results.map((row) => (
+			<tr>
+				<td>{row.team}</td>
+				<td>{row.roundScores.join(', ')}</td>
+				<td class="text-center">{row.total ?? '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

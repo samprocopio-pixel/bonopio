@@ -1,0 +1,30 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { BowlScoreRow } from '../../content/schemas/bowl';
+
+interface Props {
+	rows: BowlScoreRow[];
+}
+
+const { rows } = Astro.props;
+
+const columns = [
+	{ key: 'team', label: 'Team' },
+	{ key: 'firstHalf', label: '1H', type: 'number' as const, align: 'center' as const },
+	{ key: 'secondHalf', label: '2H', type: 'number' as const, align: 'center' as const },
+	{ key: 'final', label: 'Final', type: 'number' as const, align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Final score">
+	{
+		rows.map((row) => (
+			<tr>
+				<td>{row.team}</td>
+				<td class="text-center">{row.firstHalf ?? '—'}</td>
+				<td class="text-center">{row.secondHalf ?? '—'}</td>
+				<td class="text-center font-semibold">{row.final ?? '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

@@ -1,0 +1,148 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SortableTable from '../../components/tables/SortableTable.astro';
+
+const seasons = (await getCollection('bgaSeasons')).sort((a, b) => b.data.year - a.data.year);
+const [career] = await getCollection('bgaCareer');
+const careerRows = career.data.rows;
+
+const MIN_VENUE_APPEARANCES = 3;
+const VENUE_KEYS = ['interbay', 'jackson', 'jefferson', 'greenlake'] as const;
+
+const venueAppearances = new Map<string, Record<(typeof VENUE_KEYS)[number], number>>();
+for (const season of seasons) {
+	for (const row of season.data.individualRankings) {
+		if (!row.player) continue;
+		const slug = row.player.id;
+		if (!venueAppearances.has(slug)) {
+			venueAppearances.set(slug, { interbay: 0, jackson: 0, jefferson: 0, greenlake: 0 });
+		}
+		const counts = venueAppearances.get(slug)!;
+		for (const venue of VENUE_KEYS) {
+			if (row[venue] !== undefined) counts[venue]++;
+		}
+	}
+}
+
+function venueQualifies(row: (typeof careerRows)[number], venue: (typeof VENUE_KEYS)[number]) {
+	const counts = row.player ? venueAppearances.get(row.player.id) : undefined;
+	return (counts?.[venue] ?? 0) >= MIN_VENUE_APPEARANCES;
+}
+
+function topFive(
+	key: 'war' | 'interbayAvg' | 'jacksonAvg' | 'jeffersonAvg' | 'greenlakeAvg',
+	ascending: boolean,
+	filter?: (row: (typeof careerRows)[number]) => boolean,
+) {
+	return [...careerRows]
+		.filter((r) => r[key] !== undefined && (!filter || filter(r)))
+		.sort((a, b) => (ascending ? (a[key] as number) - (b[key] as number) : (b[key] as number) - (a[key] as number)))
+		.slice(0, 5)
+		.map((r) => ({ playerName: `${r.firstName} ${r.lastName}`, value: r[key] as number }));
+}
+
+const leaderCards = [
+	{ label: 'Top 5 WAR', leaders: topFive('war', false), format: (v: number) => `${v.toFixed(1)} WAR` },
+	{
+		label: 'Best at Greenlake',
+		leaders: topFive('greenlakeAvg', true, (r) => venueQualifies(r, 'greenlake')),
+		format: (v: number) => `${v.toFixed(1)} avg`,
+	},
+	{
+		label: 'Best at Interbay',
+		leaders: topFive('interbayAvg', true, (r) => venueQualifies(r, 'interbay')),
+		format: (v: number) => `${v.toFixed(1)} avg`,
+	},
+	{
+		label: 'Best at Jefferson',
+		leaders: topFive('jeffersonAvg', true, (r) => venueQualifies(r, 'jefferson')),
+		format: (v: number) => `${v.toFixed(1)} avg`,
+	},
+	{
+		label: 'Best at Jackson',
+		leaders: topFive('jacksonAvg', true, (r) => venueQualifies(r, 'jackson')),
+		format: (v: number) => `${v.toFixed(1)} avg`,
+	},
+	{ label: 'Worst 5 WAR', leaders: topFive('war', true), format: (v: number) => `${v.toFixed(1)} WAR` },
+];
+
+const subNavItems = [
+	{ label: 'BGA Tour Career', href: '/bga-tour/' },
+	...seasons.map((s) => ({ label: String(s.data.year), href: `/bga-tour/${s.data.year}/` })),
+];
+
+const careerColumns = [
+	{ key: 'rank', label: 'Rank', type: 'number' as const, align: 'right' as const, defaultSort: 'asc' as const },
+	{ key: 'player', label: 'Player' },
+	{ key: 'careerAvg', label: 'Career Avg', type: 'number' as const, align: 'right' as const },
+	{ key: 'war', label: 'WAR', type: 'number' as const, align: 'right' as const },
+	{ key: 'interbayAvg', label: 'Interbay', type: 'number' as const, align: 'right' as const },
+	{ key: 'jacksonAvg', label: 'Jackson', type: 'number' as const, align: 'right' as const },
+	{ key: 'jeffersonAvg', label: 'Jefferson', type: 'number' as const, align: 'right' as const },
+	{ key: 'greenlakeAvg', label: 'Greenlake', type: 'number' as const, align: 'right' as const },
+];
+---
+
+<BaseLayout title="BGA Tour" subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">BGA Tour</h1>
+	<p class="mb-6 text-ink-muted">Golf, 2008–2015.</p>
+
+	<h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">All-time leaders</h2>
+	<ul class="mb-8 grid gap-3 sm:grid-cols-3">
+		{
+			leaderCards.map((card) => (
+				<li>
+					<a
+						href="#career"
+						class="block h-full rounded-lg border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-4 no-underline transition hover:border-brand hover:shadow-md"
+					>
+						<p class="mb-2 text-xs font-semibold uppercase tracking-wide text-brand">{card.label}</p>
+						{card.leaders.length > 0 ? (
+							<ol class="space-y-1">
+								{card.leaders.map((leader, i) => (
+									<li class="flex items-baseline justify-between gap-2 text-sm whitespace-nowrap">
+										<span class="text-ink">
+											<span class="text-ink-muted">{i + 1}.</span> {leader.playerName}
+										</span>
+										<span class="shrink-0 text-ink-muted">{card.format(leader.value)}</span>
+									</li>
+								))}
+							</ol>
+						) : (
+							<p class="text-sm text-ink-muted">No data yet</p>
+						)}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+
+	<h2 id="career" class="mb-3 mt-8 scroll-mt-4 text-sm font-semibold uppercase tracking-wide text-ink-muted">
+		Career Stats
+	</h2>
+	<SortableTable columns={careerColumns} caption="Career leaderboard" stickyColumns={2}>
+		{
+			careerRows.map((row) => (
+				<tr>
+					<td class="text-center">{row.rank ?? '—'}</td>
+					<td>
+						{row.player ? (
+							<a href={`/players/${row.player.id}/`}>
+								{row.firstName} {row.lastName}
+							</a>
+						) : (
+							`${row.firstName} ${row.lastName}`
+						)}
+					</td>
+					<td class="text-center">{row.careerAvg ?? '—'}</td>
+					<td class="text-center">{row.war !== undefined ? row.war.toFixed(1) : '—'}</td>
+					<td class="text-center">{row.interbayAvg ?? '—'}</td>
+					<td class="text-center">{row.jacksonAvg ?? '—'}</td>
+					<td class="text-center">{row.jeffersonAvg ?? '—'}</td>
+					<td class="text-center">{row.greenlakeAvg ?? '—'}</td>
+				</tr>
+			))
+		}
+	</SortableTable>
+</BaseLayout>

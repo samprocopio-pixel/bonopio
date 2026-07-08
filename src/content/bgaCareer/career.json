@@ -1,0 +1,4825 @@
+{
+  "rows": [
+    {
+      "rank": 1,
+      "firstName": "Scott",
+      "lastName": "Marcum",
+      "player": "scott-marcum",
+      "careerAvg": 31.4,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 25
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 26
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 27
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 28
+        }
+      ],
+      "interbayAvg": 24.5,
+      "jacksonAvg": 7.9,
+      "jeffersonAvg": 12,
+      "greenlakeAvg": 11.4,
+      "war": 17.6
+    },
+    {
+      "rank": 1,
+      "firstName": "Erik",
+      "lastName": "Heggelund",
+      "player": "erik-heggelund",
+      "careerAvg": 31.4,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 34
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 32
+        }
+      ],
+      "interbayAvg": 3,
+      "jacksonAvg": 18.8,
+      "jeffersonAvg": 22,
+      "greenlakeAvg": 12.8,
+      "war": 11.7
+    },
+    {
+      "rank": 3,
+      "firstName": "Casey",
+      "lastName": "Granston",
+      "player": "casey-granston",
+      "careerAvg": 32.2,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 24
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 28
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 29
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 31
+        }
+      ],
+      "interbayAvg": 2.6,
+      "jacksonAvg": 11.4,
+      "jeffersonAvg": 23.3,
+      "greenlakeAvg": 4.6,
+      "war": 21
+    },
+    {
+      "rank": 4,
+      "firstName": "Cameron",
+      "lastName": "Headley",
+      "player": "cameron-headley",
+      "careerAvg": 32.7,
+      "byVenueYear": [
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 28
+        }
+      ],
+      "interbayAvg": 9,
+      "jeffersonAvg": 33,
+      "greenlakeAvg": 6,
+      "war": 0.5,
+      "jacksonAvg": 47
+    },
+    {
+      "rank": 5,
+      "firstName": "Tim",
+      "lastName": "Marra",
+      "player": "tim-marra",
+      "careerAvg": 33,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 31
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 35
+        }
+      ],
+      "jacksonAvg": 1,
+      "jeffersonAvg": 5,
+      "war": 0.8,
+      "interbayAvg": 42,
+      "greenlakeAvg": 33
+    },
+    {
+      "rank": 6,
+      "firstName": "Jonathan",
+      "lastName": "Tran",
+      "player": "jonathan-tran",
+      "careerAvg": 33.3,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 28
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 29
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 36
+        }
+      ],
+      "interbayAvg": 3.1,
+      "jacksonAvg": 7,
+      "jeffersonAvg": 21.6,
+      "greenlakeAvg": 9.3,
+      "war": 21.3
+    },
+    {
+      "rank": 7,
+      "firstName": "Kellen",
+      "lastName": "Sundin",
+      "player": "kellen-sundin",
+      "careerAvg": 33.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 27
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 28
+        }
+      ],
+      "interbayAvg": 12.9,
+      "jacksonAvg": 8.4,
+      "jeffersonAvg": 11.8,
+      "greenlakeAvg": 5.3,
+      "war": 25.7
+    },
+    {
+      "rank": 8,
+      "firstName": "Taylor",
+      "lastName": "Madison",
+      "player": "taylor-madison",
+      "careerAvg": 33.7,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 33
+        }
+      ],
+      "interbayAvg": 10,
+      "jacksonAvg": 6.3,
+      "jeffersonAvg": 15.7,
+      "greenlakeAvg": 32.7,
+      "war": 6
+    },
+    {
+      "rank": 8,
+      "firstName": "Billy",
+      "lastName": "Moultrie",
+      "player": "billy-moultrie",
+      "careerAvg": 33.7,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 30
+        }
+      ],
+      "interbayAvg": 10,
+      "jacksonAvg": 30.8,
+      "jeffersonAvg": 21.2,
+      "greenlakeAvg": 9.7,
+      "war": 8.7
+    },
+    {
+      "rank": 10,
+      "firstName": "Sleepy",
+      "lastName": "Hopps",
+      "player": "sleepy-hopps",
+      "careerAvg": 33.9,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 28
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 32
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 33
+        }
+      ],
+      "interbayAvg": 8.3,
+      "jacksonAvg": 5.6,
+      "jeffersonAvg": 18.1,
+      "greenlakeAvg": 13.5,
+      "war": 22.4
+    },
+    {
+      "rank": 11,
+      "firstName": "Reed",
+      "lastName": "Hunter",
+      "player": "reed-hunter",
+      "careerAvg": 34,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 47
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 28
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 28
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 32
+        }
+      ],
+      "interbayAvg": 6.9,
+      "jacksonAvg": 12.4,
+      "jeffersonAvg": 16.4,
+      "greenlakeAvg": 7.5,
+      "war": 23.7
+    },
+    {
+      "rank": 12,
+      "firstName": "Andy",
+      "lastName": "Rockwell",
+      "player": "andy-rockwell",
+      "careerAvg": 34.2,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 34
+        }
+      ],
+      "interbayAvg": 19,
+      "jacksonAvg": 17,
+      "jeffersonAvg": 13,
+      "greenlakeAvg": 11.3,
+      "war": 12.3
+    },
+    {
+      "rank": 13,
+      "firstName": "Scott",
+      "lastName": "Hitchcock",
+      "player": "scott-hitchcock",
+      "careerAvg": 34.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 29
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 31
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 34
+        }
+      ],
+      "interbayAvg": 12.8,
+      "jacksonAvg": 17.8,
+      "jeffersonAvg": 16.2,
+      "greenlakeAvg": 7.8,
+      "war": 12.2
+    },
+    {
+      "rank": 14,
+      "firstName": "Brian",
+      "lastName": "Woodward",
+      "player": "brian-woodward",
+      "careerAvg": 34.8,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 32
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 29
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 26
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 47
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 45
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 32
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 35
+        }
+      ],
+      "interbayAvg": 10.1,
+      "jacksonAvg": 10.5,
+      "jeffersonAvg": 18.4,
+      "greenlakeAvg": 5.1,
+      "war": 22.8
+    },
+    {
+      "rank": 15,
+      "firstName": "Eric",
+      "lastName": "Omlin",
+      "player": "eric-omlin",
+      "careerAvg": 35.1,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 32
+        }
+      ],
+      "interbayAvg": 8.8,
+      "jacksonAvg": 19.2,
+      "jeffersonAvg": 20.2,
+      "greenlakeAvg": 20.6,
+      "war": 8.3
+    },
+    {
+      "rank": 16,
+      "firstName": "Brendan",
+      "lastName": "Nolan",
+      "player": "brendan-nolan",
+      "careerAvg": 35.3,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 34
+        }
+      ],
+      "interbayAvg": 16.8,
+      "jacksonAvg": 18.8,
+      "jeffersonAvg": 21.2,
+      "greenlakeAvg": 10.8,
+      "war": 10.4
+    },
+    {
+      "rank": 17,
+      "firstName": "Scott",
+      "lastName": "Wallace",
+      "player": "scott-wallace",
+      "careerAvg": 35.4,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 40
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 30
+        }
+      ],
+      "interbayAvg": 15.3,
+      "jacksonAvg": 20.3,
+      "jeffersonAvg": 24.2,
+      "greenlakeAvg": 13.8,
+      "war": 7.6
+    },
+    {
+      "rank": 18,
+      "firstName": "Jack",
+      "lastName": "Groseclose",
+      "player": "jack-groseclose",
+      "careerAvg": 35.7,
+      "byVenueYear": [
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 34
+        }
+      ],
+      "interbayAvg": 25,
+      "jacksonAvg": 20.5,
+      "jeffersonAvg": 30,
+      "war": -1.7,
+      "greenlakeAvg": 31.5
+    },
+    {
+      "rank": 18,
+      "firstName": "Jay",
+      "lastName": "Blazey",
+      "player": "jay-blazey",
+      "careerAvg": 35.7,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 37
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 35
+        }
+      ],
+      "interbayAvg": 20,
+      "jacksonAvg": 13.9,
+      "jeffersonAvg": 16.8,
+      "greenlakeAvg": 15.6,
+      "war": 13.1
+    },
+    {
+      "rank": 20,
+      "firstName": "Matt",
+      "lastName": "Morgan",
+      "player": "matt-morgan",
+      "careerAvg": 36.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 31
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 30
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 46
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 40
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 29
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 37
+        }
+      ],
+      "interbayAvg": 13.3,
+      "jacksonAvg": 24.1,
+      "jeffersonAvg": 17.6,
+      "greenlakeAvg": 16.5,
+      "war": 11.3
+    },
+    {
+      "rank": 20,
+      "firstName": "Stephan",
+      "lastName": "Gray",
+      "player": "stephan-gray",
+      "careerAvg": 36.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 29
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 29
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 38
+        }
+      ],
+      "interbayAvg": 19.1,
+      "jacksonAvg": 20.6,
+      "jeffersonAvg": 19.7,
+      "greenlakeAvg": 19.7,
+      "war": 7.5
+    },
+    {
+      "rank": 22,
+      "firstName": "Sean",
+      "lastName": "Shoemaker",
+      "player": "sean-shoemaker",
+      "careerAvg": 37.1,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 40
+        }
+      ],
+      "interbayAvg": 25.8,
+      "jacksonAvg": 21,
+      "jeffersonAvg": 17.3,
+      "greenlakeAvg": 23,
+      "war": 4.6
+    },
+    {
+      "rank": 23,
+      "firstName": "Chris",
+      "lastName": "Cunningham",
+      "player": "chris-cunningham",
+      "careerAvg": 37.2,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 42
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 46
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 32
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 40
+        }
+      ],
+      "interbayAvg": 21.9,
+      "jacksonAvg": 19.8,
+      "jeffersonAvg": 22.3,
+      "greenlakeAvg": 19,
+      "war": 6.3
+    },
+    {
+      "rank": 24,
+      "firstName": "Tyler",
+      "lastName": "Carr",
+      "player": "tyler-carr",
+      "careerAvg": 37.4,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 47
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 28
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 29
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 42
+        }
+      ],
+      "interbayAvg": 12.5,
+      "jacksonAvg": 23.5,
+      "jeffersonAvg": 27.2,
+      "greenlakeAvg": 29.3,
+      "war": 2.1
+    },
+    {
+      "rank": 25,
+      "firstName": "Chris",
+      "lastName": "Vogel",
+      "player": "chris-vogel",
+      "careerAvg": 37.5,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 33
+        }
+      ],
+      "interbayAvg": 26,
+      "jacksonAvg": 35,
+      "jeffersonAvg": 23,
+      "greenlakeAvg": 21,
+      "war": 0
+    },
+    {
+      "rank": 26,
+      "firstName": "Dan",
+      "lastName": "Titcomb",
+      "player": "dan-titcomb",
+      "careerAvg": 37.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 50
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 45
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 42
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 39
+        }
+      ],
+      "interbayAvg": 14.5,
+      "jacksonAvg": 16.8,
+      "jeffersonAvg": 14.4,
+      "greenlakeAvg": 23.9,
+      "war": 12.5
+    },
+    {
+      "rank": 26,
+      "firstName": "Mike",
+      "lastName": "Self",
+      "player": "mike-self",
+      "careerAvg": 37.6,
+      "byVenueYear": [
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 44
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 37
+        }
+      ],
+      "interbayAvg": 18.5,
+      "jeffersonAvg": 26.3,
+      "war": -4.7,
+      "jacksonAvg": 41.5,
+      "greenlakeAvg": 35.3
+    },
+    {
+      "rank": 26,
+      "firstName": "Ollie",
+      "lastName": "Peterson",
+      "player": "ollie-peterson",
+      "careerAvg": 37.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 40
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 38
+        }
+      ],
+      "interbayAvg": 25.5,
+      "jacksonAvg": 24.8,
+      "jeffersonAvg": 13.1,
+      "greenlakeAvg": 19,
+      "war": 6.9
+    },
+    {
+      "rank": 29,
+      "firstName": "Matt",
+      "lastName": "Grimm",
+      "player": "matt-grimm",
+      "careerAvg": 37.9,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 42
+        }
+      ],
+      "interbayAvg": 23.3,
+      "jacksonAvg": 17.7,
+      "jeffersonAvg": 24.3,
+      "greenlakeAvg": 32.3,
+      "war": 0.4
+    },
+    {
+      "rank": 30,
+      "firstName": "Sean",
+      "lastName": "Clifton",
+      "player": "sean-clifton",
+      "careerAvg": 38,
+      "byVenueYear": [
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 42
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 32
+        }
+      ],
+      "interbayAvg": 30,
+      "jacksonAvg": 28,
+      "jeffersonAvg": 17,
+      "greenlakeAvg": 13,
+      "war": 0.7
+    },
+    {
+      "rank": 30,
+      "firstName": "Matt",
+      "lastName": "Miller",
+      "player": "matt-miller",
+      "careerAvg": 38,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 47
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 29
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 42
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 37
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 37
+        }
+      ],
+      "interbayAvg": 23.3,
+      "jacksonAvg": 18.4,
+      "jeffersonAvg": 31.6,
+      "greenlakeAvg": 21.1,
+      "war": 1.5
+    },
+    {
+      "rank": 30,
+      "firstName": "Tim",
+      "lastName": "Sinnett",
+      "player": "tim-sinnett",
+      "careerAvg": 38,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 37
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 39
+        }
+      ],
+      "greenlakeAvg": 14,
+      "war": -1.7,
+      "interbayAvg": 36,
+      "jacksonAvg": 32,
+      "jeffersonAvg": 32
+    },
+    {
+      "rank": 33,
+      "firstName": "Jeff",
+      "lastName": "Ahern",
+      "player": "jeff-ahern",
+      "careerAvg": 38.1,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 47
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 40
+        }
+      ],
+      "interbayAvg": 16.2,
+      "jacksonAvg": 31.7,
+      "jeffersonAvg": 18.7,
+      "greenlakeAvg": 19.3,
+      "war": 4.2
+    },
+    {
+      "rank": 34,
+      "firstName": "Tyson",
+      "lastName": "Sixkiller",
+      "player": "tyson-sixkiller",
+      "careerAvg": 38.4,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 42
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 27
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 47
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 41
+        }
+      ],
+      "interbayAvg": 27.9,
+      "jacksonAvg": 15.9,
+      "jeffersonAvg": 20.4,
+      "greenlakeAvg": 25.4,
+      "war": 3.1
+    },
+    {
+      "rank": 35,
+      "firstName": "Connor",
+      "lastName": "Eagan",
+      "player": "connor-eagan",
+      "careerAvg": 38.7,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 45
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 40
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 29
+        }
+      ],
+      "interbayAvg": 33.3,
+      "jacksonAvg": 24.4,
+      "jeffersonAvg": 22.4,
+      "greenlakeAvg": 30.3,
+      "war": -4.3
+    },
+    {
+      "rank": 36,
+      "firstName": "Jon",
+      "lastName": "Brown",
+      "player": "jon-brown",
+      "careerAvg": 38.9,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 51
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 42
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 40
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 48
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 42
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 39
+        }
+      ],
+      "interbayAvg": 15.5,
+      "jacksonAvg": 30.6,
+      "jeffersonAvg": 20,
+      "greenlakeAvg": 20.8,
+      "war": 4.8
+    },
+    {
+      "rank": 37,
+      "firstName": "Nate",
+      "lastName": "Monroe",
+      "player": "nate-monroe",
+      "careerAvg": 39,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 42
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 48
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 47
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 45
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 40
+        }
+      ],
+      "interbayAvg": 22.1,
+      "jacksonAvg": 17.3,
+      "jeffersonAvg": 19.3,
+      "greenlakeAvg": 25.4,
+      "war": 4.8
+    },
+    {
+      "rank": 37,
+      "firstName": "RJ",
+      "lastName": "Tuchscherer",
+      "player": "rj-tuchscherer",
+      "careerAvg": 39,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 42
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 31
+        }
+      ],
+      "interbayAvg": 29,
+      "jacksonAvg": 14,
+      "jeffersonAvg": 27,
+      "greenlakeAvg": 6,
+      "war": 1.1
+    },
+    {
+      "rank": 39,
+      "firstName": "Sam",
+      "lastName": "Procopio",
+      "player": "sam-procopio",
+      "careerAvg": 39.1,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 42
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 44
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 41
+        }
+      ],
+      "interbayAvg": 28,
+      "jacksonAvg": 19.1,
+      "jeffersonAvg": 20.1,
+      "greenlakeAvg": 16,
+      "war": 6.4
+    },
+    {
+      "rank": 40,
+      "firstName": "Blade",
+      "lastName": "Imsande",
+      "player": "blade-imsande",
+      "careerAvg": 39.5,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 49
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 47
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 42
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 50
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 41
+        }
+      ],
+      "interbayAvg": 31,
+      "jacksonAvg": 31.3,
+      "jeffersonAvg": 16.4,
+      "greenlakeAvg": 25.6,
+      "war": -3.3
+    },
+    {
+      "rank": 40,
+      "firstName": "Garth",
+      "lastName": "Erickson",
+      "player": "garth-erickson",
+      "careerAvg": 39.5,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 35
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 47
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 40
+        }
+      ],
+      "interbayAvg": 21.3,
+      "jacksonAvg": 19.2,
+      "jeffersonAvg": 27.5,
+      "greenlakeAvg": 31.3,
+      "war": 0.2
+    },
+    {
+      "rank": 42,
+      "firstName": "Nick",
+      "lastName": "Jordan",
+      "player": "nick-jordan",
+      "careerAvg": 39.6,
+      "byVenueYear": [
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 54
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 34
+        }
+      ],
+      "interbayAvg": 20,
+      "jacksonAvg": 20,
+      "jeffersonAvg": 20.5,
+      "greenlakeAvg": 25,
+      "war": 1.5
+    },
+    {
+      "rank": 43,
+      "firstName": "David",
+      "lastName": "Ito",
+      "player": "david-ito",
+      "careerAvg": 39.7,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 31
+        }
+      ],
+      "interbayAvg": 26.5,
+      "jeffersonAvg": 23.5,
+      "war": -3,
+      "jacksonAvg": 36,
+      "greenlakeAvg": 31.5
+    },
+    {
+      "rank": 44,
+      "firstName": "Jeff",
+      "lastName": "Tindall",
+      "player": "jeff-tindall",
+      "careerAvg": 40,
+      "byVenueYear": [
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 40
+        }
+      ],
+      "jacksonAvg": 23,
+      "war": -2.5,
+      "interbayAvg": 45,
+      "jeffersonAvg": 41,
+      "greenlakeAvg": 42
+    },
+    {
+      "rank": 45,
+      "firstName": "Andrew",
+      "lastName": "Didier",
+      "player": "andrew-didier",
+      "careerAvg": 40.3,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 51
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 36
+        }
+      ],
+      "interbayAvg": 38.2,
+      "jacksonAvg": 25.5,
+      "jeffersonAvg": 18.2,
+      "greenlakeAvg": 28.2,
+      "war": -2.7
+    },
+    {
+      "rank": 46,
+      "firstName": "Brad",
+      "lastName": "DiJulio",
+      "player": "brad-dijulio",
+      "careerAvg": 40.4,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 51
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 42
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 48
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 35
+        }
+      ],
+      "interbayAvg": 26.2,
+      "jacksonAvg": 32.8,
+      "jeffersonAvg": 19.5,
+      "greenlakeAvg": 30.8,
+      "war": -2.7
+    },
+    {
+      "rank": 47,
+      "firstName": "Rex",
+      "lastName": "Pierotti",
+      "player": "rex-pierotti",
+      "careerAvg": 40.8,
+      "byVenueYear": [
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 36
+        }
+      ],
+      "interbayAvg": 32.7,
+      "jacksonAvg": 41.3,
+      "jeffersonAvg": 32.3,
+      "war": -6.6,
+      "greenlakeAvg": 39.3
+    },
+    {
+      "rank": 48,
+      "firstName": "John Paul",
+      "lastName": "Mulally",
+      "player": "john-paul-mulally",
+      "careerAvg": 40.9,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 49
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 47
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 44
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 39
+        }
+      ],
+      "interbayAvg": 33.2,
+      "jacksonAvg": 25.2,
+      "jeffersonAvg": 28.7,
+      "greenlakeAvg": 24.7,
+      "war": -3.5
+    },
+    {
+      "rank": 49,
+      "firstName": "Dain",
+      "lastName": "Engebretsen",
+      "player": "dain-engebretsen",
+      "careerAvg": 41,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 35
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 42
+        }
+      ],
+      "interbayAvg": 6,
+      "jacksonAvg": 32,
+      "jeffersonAvg": 27,
+      "war": -0.1,
+      "greenlakeAvg": 33
+    },
+    {
+      "rank": 49,
+      "firstName": "Pat",
+      "lastName": "Hopps",
+      "player": "pat-hopps",
+      "careerAvg": 41,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 34
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 40
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 44
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 50
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 37
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 42
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 55
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 29
+        }
+      ],
+      "interbayAvg": 31.4,
+      "jacksonAvg": 23.3,
+      "jeffersonAvg": 25.4,
+      "greenlakeAvg": 29.3,
+      "war": -4.5
+    },
+    {
+      "rank": 51,
+      "firstName": "David",
+      "lastName": "Fisher",
+      "player": "david-fisher",
+      "careerAvg": 41.8,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 40
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 47
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 47
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 33
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 54
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 35
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 49
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 42
+        }
+      ],
+      "interbayAvg": 28.4,
+      "jacksonAvg": 29.5,
+      "jeffersonAvg": 23.3,
+      "greenlakeAvg": 31.3,
+      "war": -5.8
+    },
+    {
+      "rank": 52,
+      "firstName": "Conrad",
+      "lastName": "Herberholt",
+      "player": "conrad-herberholt",
+      "careerAvg": 41.9,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 47
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 53
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 50
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 27
+        }
+      ],
+      "interbayAvg": 37.4,
+      "jacksonAvg": 34.8,
+      "jeffersonAvg": 30.6,
+      "greenlakeAvg": 34.2,
+      "war": -10.2
+    },
+    {
+      "rank": 53,
+      "firstName": "Scot",
+      "lastName": "Milhollen",
+      "player": "scot-milhollen",
+      "careerAvg": 42,
+      "byVenueYear": [
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 42
+        }
+      ],
+      "interbayAvg": 10,
+      "war": -1.1,
+      "jacksonAvg": 32,
+      "jeffersonAvg": 32,
+      "greenlakeAvg": 30
+    },
+    {
+      "rank": 54,
+      "firstName": "Jeff",
+      "lastName": "Bonar",
+      "player": "jeff-bonar",
+      "careerAvg": 42.1,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 48
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 47
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 32
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 42
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 48
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 45
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 48
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 49
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 50
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 30
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 37
+        }
+      ],
+      "interbayAvg": 35.5,
+      "jacksonAvg": 29.8,
+      "jeffersonAvg": 27.5,
+      "greenlakeAvg": 23.9,
+      "war": -7.6
+    },
+    {
+      "rank": 55,
+      "firstName": "Warren",
+      "lastName": "Witsoe",
+      "player": "warren-witsoe",
+      "careerAvg": 42.9,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 54
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 46
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 49
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 52
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 52
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 52
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 34
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 39
+        }
+      ],
+      "interbayAvg": 42.4,
+      "jacksonAvg": 37.6,
+      "jeffersonAvg": 23,
+      "greenlakeAvg": 29,
+      "war": -12
+    },
+    {
+      "rank": 56,
+      "firstName": "Mike",
+      "lastName": "Broom",
+      "player": "mike-broom",
+      "careerAvg": 43,
+      "byVenueYear": [
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 53
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 49
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 28
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 42
+        }
+      ],
+      "interbayAvg": 33,
+      "jacksonAvg": 24,
+      "jeffersonAvg": 5,
+      "greenlakeAvg": 25,
+      "war": -0.1
+    },
+    {
+      "rank": 57,
+      "firstName": "Sean",
+      "lastName": "Farrell",
+      "player": "sean-farrell",
+      "careerAvg": 43.1,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 60
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 41
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 44
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 42
+        }
+      ],
+      "interbayAvg": 38.8,
+      "jacksonAvg": 33.8,
+      "jeffersonAvg": 30.6,
+      "greenlakeAvg": 35.2,
+      "war": -9.7
+    },
+    {
+      "rank": 58,
+      "firstName": "Nick",
+      "lastName": "Hielbrun",
+      "player": "nick-hielbrun",
+      "careerAvg": 43.2,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 47
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 47
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 51
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 40
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 36
+        }
+      ],
+      "interbayAvg": 33,
+      "jacksonAvg": 23,
+      "jeffersonAvg": 22.5,
+      "war": -2.2,
+      "greenlakeAvg": 31.5
+    },
+    {
+      "rank": 59,
+      "firstName": "Steve",
+      "lastName": "DeShazo",
+      "player": "steve-deshazo",
+      "careerAvg": 44,
+      "byVenueYear": [
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 44
+        }
+      ],
+      "interbayAvg": 42,
+      "jeffersonAvg": 41,
+      "greenlakeAvg": 38,
+      "war": -2.7,
+      "jacksonAvg": 40
+    },
+    {
+      "rank": 60,
+      "firstName": "Andrew",
+      "lastName": "Jordan",
+      "player": "andrew-jordan",
+      "careerAvg": 44.3,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 49
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 50
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 43
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 31
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 47
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 53
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 45
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 39
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 46
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 36
+        },
+        {
+          "year": 2009,
+          "venue": "Greenlake",
+          "avg": 48
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 51
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 51
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 32
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 49
+        }
+      ],
+      "interbayAvg": 38.6,
+      "jacksonAvg": 35.9,
+      "jeffersonAvg": 23.4,
+      "greenlakeAvg": 31.8,
+      "war": -13.4
+    },
+    {
+      "rank": 61,
+      "firstName": "Ian",
+      "lastName": "Murray",
+      "player": "ian-murray",
+      "careerAvg": 44.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 47
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 37
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 38
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 48
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 40
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 45
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 50
+        },
+        {
+          "year": 2010,
+          "venue": "Greenlake",
+          "avg": 52
+        }
+      ],
+      "interbayAvg": 43.8,
+      "jacksonAvg": 42.8,
+      "jeffersonAvg": 37,
+      "greenlakeAvg": 35,
+      "war": -10.9
+    },
+    {
+      "rank": 61,
+      "firstName": "Duncan",
+      "lastName": "Butcher",
+      "player": "duncan-butcher",
+      "careerAvg": 44.6,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 49
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 42
+        },
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 50
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 47
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 36
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 58
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 52
+        },
+        {
+          "year": 2010,
+          "venue": "Jefferson",
+          "avg": 36
+        }
+      ],
+      "interbayAvg": 37,
+      "jacksonAvg": 32.7,
+      "jeffersonAvg": 21.7,
+      "greenlakeAvg": 33.2,
+      "war": -7.7
+    },
+    {
+      "rank": 63,
+      "firstName": "Robby",
+      "lastName": "Sjoberg",
+      "player": "robby-sjoberg",
+      "careerAvg": 45,
+      "byVenueYear": [
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 45
+        }
+      ],
+      "jacksonAvg": 21,
+      "war": -2,
+      "interbayAvg": 36,
+      "jeffersonAvg": 32,
+      "greenlakeAvg": 30
+    },
+    {
+      "rank": 64,
+      "firstName": "Sean",
+      "lastName": "Beattie",
+      "player": "sean-beattie",
+      "careerAvg": 45.5,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 52
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 44
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 50
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 44
+        },
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 46
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 43
+        },
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 42
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 48
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 49
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 54
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 33
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 41
+        }
+      ],
+      "interbayAvg": 37.8,
+      "jacksonAvg": 32,
+      "jeffersonAvg": 36.1,
+      "greenlakeAvg": 31.1,
+      "war": -16.6
+    },
+    {
+      "rank": 64,
+      "firstName": "Jeff",
+      "lastName": "King",
+      "player": "jeff-king",
+      "careerAvg": 45.5,
+      "byVenueYear": [
+        {
+          "year": 2012,
+          "venue": "Interbay",
+          "avg": 44
+        },
+        {
+          "year": 2012,
+          "venue": "Jackson",
+          "avg": 47
+        },
+        {
+          "year": 2012,
+          "venue": "Jefferson",
+          "avg": 41
+        },
+        {
+          "year": 2012,
+          "venue": "Greenlake",
+          "avg": 50
+        }
+      ],
+      "interbayAvg": 37,
+      "jacksonAvg": 37,
+      "jeffersonAvg": 31,
+      "greenlakeAvg": 33.5,
+      "war": -3.5
+    },
+    {
+      "rank": 66,
+      "firstName": "Zak",
+      "lastName": "Downing",
+      "player": "zak-downing",
+      "careerAvg": 46.7,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Interbay",
+          "avg": 49
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 48
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 38
+        },
+        {
+          "year": 2008,
+          "venue": "Interbay",
+          "avg": 61
+        },
+        {
+          "year": 2008,
+          "venue": "Jackson",
+          "avg": 56
+        },
+        {
+          "year": 2008,
+          "venue": "Jefferson",
+          "avg": 27
+        },
+        {
+          "year": 2008,
+          "venue": "Greenlake",
+          "avg": 48
+        }
+      ],
+      "interbayAvg": 37,
+      "jacksonAvg": 33,
+      "jeffersonAvg": 8,
+      "greenlakeAvg": 30.5,
+      "war": -2
+    },
+    {
+      "rank": 67,
+      "firstName": "Brett",
+      "lastName": "Nelsen",
+      "player": "brett-nelsen",
+      "careerAvg": 48.7,
+      "byVenueYear": [
+        {
+          "year": 2010,
+          "venue": "Interbay",
+          "avg": 45
+        },
+        {
+          "year": 2010,
+          "venue": "Jackson",
+          "avg": 56
+        },
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 45
+        }
+      ],
+      "interbayAvg": 39.5,
+      "jacksonAvg": 37,
+      "war": -5.4,
+      "jeffersonAvg": 36.5,
+      "greenlakeAvg": 37.5
+    },
+    {
+      "rank": 68,
+      "firstName": "Riley",
+      "lastName": "Lovejoy",
+      "player": "riley-lovejoy",
+      "careerAvg": 48.8,
+      "byVenueYear": [
+        {
+          "year": 2011,
+          "venue": "Interbay",
+          "avg": 67
+        },
+        {
+          "year": 2011,
+          "venue": "Jackson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Jefferson",
+          "avg": 39
+        },
+        {
+          "year": 2011,
+          "venue": "Greenlake",
+          "avg": 50
+        }
+      ],
+      "interbayAvg": 46,
+      "jacksonAvg": 47,
+      "jeffersonAvg": 33,
+      "greenlakeAvg": 42,
+      "war": -3
+    },
+    {
+      "rank": 69,
+      "firstName": "Abe",
+      "lastName": "Saeed",
+      "player": "abe-saeed",
+      "careerAvg": 50.5,
+      "byVenueYear": [
+        {
+          "year": 2009,
+          "venue": "Jackson",
+          "avg": 54
+        },
+        {
+          "year": 2009,
+          "venue": "Jefferson",
+          "avg": 47
+        }
+      ],
+      "jacksonAvg": 39,
+      "jeffersonAvg": 31,
+      "war": -2.7,
+      "interbayAvg": 42,
+      "greenlakeAvg": 33
+    }
+  ]
+}

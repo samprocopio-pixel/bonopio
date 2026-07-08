@@ -1,0 +1,36 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { LawtonStandingsRow } from '../../content/schemas/lawton';
+
+interface Props {
+	standings: LawtonStandingsRow[];
+}
+
+const { standings } = Astro.props;
+
+const columns = [
+	{ key: 'team', label: 'Team' },
+	{ key: 'g', label: 'G', type: 'number' as const, align: 'center' as const },
+	{ key: 'w', label: 'W', type: 'number' as const, align: 'center' as const, defaultSort: 'desc' as const },
+	{ key: 'l', label: 'L', type: 'number' as const, align: 'center' as const },
+	{ key: 'pf', label: 'PF', type: 'number' as const, align: 'center' as const },
+	{ key: 'pa', label: 'PA', type: 'number' as const, align: 'center' as const },
+	{ key: 'diff', label: 'DIFF', type: 'number' as const, align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Standings">
+	{
+		standings.map((row) => (
+			<tr>
+				<td>{row.team}</td>
+				<td class="text-center">{row.g ?? '—'}</td>
+				<td class="text-center">{row.w ?? '—'}</td>
+				<td class="text-center">{row.l ?? '—'}</td>
+				<td class="text-center">{row.pf ?? '—'}</td>
+				<td class="text-center">{row.pa ?? '—'}</td>
+				<td class="text-center">{row.diff ?? '—'}</td>
+			</tr>
+		))
+	}
+</SortableTable>

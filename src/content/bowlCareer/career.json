@@ -1,0 +1,167 @@
+{
+  "rows": [
+    {
+      "playerName": "Brian Woodward",
+      "player": "brian-woodward",
+      "titles": 1,
+      "touchdowns": 5,
+      "combineStars": 4,
+      "war": 1.3
+    },
+    {
+      "playerName": "Ollie Peterson",
+      "player": "ollie-peterson",
+      "titles": 3,
+      "touchdowns": 3,
+      "combineStars": 3,
+      "war": 9.9
+    },
+    {
+      "playerName": "Cameron Headley",
+      "player": "cameron-headley",
+      "titles": 1,
+      "touchdowns": 0,
+      "combineStars": 2,
+      "war": 3.3
+    },
+    {
+      "playerName": "Sleepy Hopps",
+      "player": "sleepy-hopps",
+      "titles": 2,
+      "touchdowns": 0,
+      "combineStars": 3,
+      "war": 0.9
+    },
+    {
+      "playerName": "Nate Monroe",
+      "player": "nate-monroe",
+      "titles": 1,
+      "touchdowns": 0,
+      "combineStars": 4,
+      "war": -0.2
+    },
+    {
+      "playerName": "Reed Hunter",
+      "player": "reed-hunter",
+      "titles": 1,
+      "touchdowns": 0,
+      "combineStars": 2,
+      "war": 2.5
+    },
+    {
+      "playerName": "Chris Cunningham",
+      "player": "chris-cunningham",
+      "titles": 2,
+      "touchdowns": 0,
+      "combineStars": 2,
+      "war": 0.4
+    },
+    {
+      "playerName": "Jay Blazey",
+      "player": "jay-blazey",
+      "titles": 1,
+      "touchdowns": 0,
+      "combineStars": 2,
+      "war": -0.4
+    },
+    {
+      "playerName": "Sam Procopio",
+      "player": "sam-procopio",
+      "titles": 2,
+      "touchdowns": 6,
+      "combineStars": 4,
+      "war": 4.8
+    },
+    {
+      "playerName": "Jeff Ahern",
+      "player": "jeff-ahern",
+      "titles": 2,
+      "touchdowns": 0,
+      "combineStars": 3,
+      "war": 1.8
+    },
+    {
+      "playerName": "David Fisher",
+      "player": "david-fisher",
+      "titles": 1,
+      "touchdowns": 0,
+      "combineStars": 4,
+      "war": 1.2
+    },
+    {
+      "playerName": "Warren Witsoe",
+      "player": "warren-witsoe",
+      "titles": 1,
+      "touchdowns": 1,
+      "combineStars": 4,
+      "war": 0.7
+    },
+    {
+      "playerName": "Pat Hopps",
+      "player": "pat-hopps",
+      "titles": 1,
+      "touchdowns": 0,
+      "combineStars": 3,
+      "war": -1.5
+    },
+    {
+      "playerName": "Blade Imsande",
+      "player": "blade-imsande",
+      "titles": 2,
+      "touchdowns": 0,
+      "combineStars": 4,
+      "war": 1.3
+    },
+    {
+      "playerName": "Matt Morgan",
+      "player": "matt-morgan",
+      "titles": 1,
+      "touchdowns": 0,
+      "combineStars": 3,
+      "war": -5.7
+    },
+    {
+      "playerName": "Jeff Bonar",
+      "player": "jeff-bonar",
+      "titles": 2,
+      "touchdowns": 0,
+      "combineStars": 1,
+      "war": 1.3
+    },
+    {
+      "playerName": "Casey Granston",
+      "player": "casey-granston",
+      "titles": 0,
+      "touchdowns": 0,
+      "war": -4
+    },
+    {
+      "playerName": "John Paul Mulally",
+      "player": "john-paul-mulally",
+      "titles": 0,
+      "touchdowns": 0,
+      "war": -3.5
+    },
+    {
+      "playerName": "Jonathan Tran",
+      "player": "jonathan-tran",
+      "titles": 0,
+      "touchdowns": 0,
+      "war": -4
+    },
+    {
+      "playerName": "Jeff Torrance",
+      "player": "jeff-torrance",
+      "titles": 1,
+      "touchdowns": 0,
+      "war": 4
+    },
+    {
+      "playerName": "Ian Murray",
+      "player": "ian-murray",
+      "titles": 1,
+      "touchdowns": 0,
+      "war": 3.8
+    }
+  ]
+}

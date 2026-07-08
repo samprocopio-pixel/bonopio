@@ -1,0 +1,30 @@
+---
+import SortableTable from './SortableTable.astro';
+import type { BowlStatLeader } from '../../content/schemas/bowl';
+
+interface Props {
+	rows: BowlStatLeader[];
+}
+
+const { rows } = Astro.props;
+
+const columns = [
+	{ key: 'team', label: 'Team' },
+	{ key: 'category', label: 'Category' },
+	{ key: 'player', label: 'Player' },
+	{ key: 'value', label: 'Value', align: 'center' as const },
+];
+---
+
+<SortableTable columns={columns} caption="Statistical leaders">
+	{
+		rows.map((row) => (
+			<tr>
+				<td>{row.team}</td>
+				<td>{row.category}</td>
+				<td>{row.player ? <a href={`/players/${row.player.id}/`}>{row.playerName}</a> : row.playerName}</td>
+				<td class="text-center">{row.value}</td>
+			</tr>
+		))
+	}
+</SortableTable>

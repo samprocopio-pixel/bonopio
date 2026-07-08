@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BoroughsStatTable from '../../components/tables/BoroughsStatTable.astro';
+import BoroughsOverallTable from '../../components/tables/BoroughsOverallTable.astro';
+import BoroughsStandingsTable from '../../components/tables/BoroughsStandingsTable.astro';
+
+export async function getStaticPaths() {
+	const seasons = await getCollection('boroughsSeasons');
+	return seasons.map((season) => ({
+		params: { year: String(season.data.year) },
+		props: { season, allSeasons: seasons },
+	}));
+}
+
+const { season, allSeasons } = Astro.props;
+const sortedSeasons = [...allSeasons].sort((a, b) => b.data.year - a.data.year);
+
+const subNavItems = [
+	{ label: 'Boroughs Career', href: '/boroughs/' },
+	...sortedSeasons.map((s) => ({ label: String(s.data.year), href: `/boroughs/${s.data.year}/` })),
+];
+---
+
+<BaseLayout title={`Boroughs ${season.data.year}`} subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">Boroughs — {season.data.year}</h1>
+	{season.data.championTeam && <p class="mb-6 text-ink-muted">Champion: {season.data.championTeam}</p>}
+
+	<h2 class="mb-3 text-lg font-semibold">Standings</h2>
+	<BoroughsStandingsTable standings={season.data.standings} />
+
+	<h2 class="mb-3 mt-6 text-lg font-semibold">Hitting</h2>
+	<BoroughsStatTable kind="hitting" byRegion={season.data.hittingByRegion} />
+
+	<h2 class="mb-3 mt-6 text-lg font-semibold">Pitching</h2>
+	<BoroughsStatTable kind="pitching" byRegion={season.data.pitchingByRegion} />
+
+	<h2 class="mb-3 mt-6 text-lg font-semibold">Overall</h2>
+	<BoroughsOverallTable rows={season.data.overall} />
+</BaseLayout>

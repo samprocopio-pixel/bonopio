@@ -1,0 +1,146 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BoroughsStatTable from '../../components/tables/BoroughsStatTable.astro';
+import BoroughsOverallTable from '../../components/tables/BoroughsOverallTable.astro';
+import RankBadge from '../../components/rankings/RankBadge.astro';
+
+const seasons = (await getCollection('boroughsSeasons')).sort((a, b) => b.data.year - a.data.year);
+const [career] = await getCollection('boroughsCareer');
+const careerHitting = career.data.hittingByRegion.flatMap((g) => g.rows);
+const careerPitching = career.data.pitchingByRegion.flatMap((g) => g.rows);
+const careerOverall = career.data.overall;
+
+const MIN_PA_FOR_HITTING = 20;
+const MIN_IP_FOR_PITCHING = 10;
+
+function topFiveHitting(key: 'avg' | 'hr' | 'r' | 'rbi' | 'k' | 'war') {
+	return [...careerHitting]
+		.filter((r) => r[key] !== undefined && (r.ab ?? 0) + (r.bb ?? 0) >= MIN_PA_FOR_HITTING)
+		.sort((a, b) => (b[key] as number) - (a[key] as number))
+		.slice(0, 5)
+		.map((r) => ({ playerName: r.playerName, value: r[key] as number }));
+}
+
+function topFivePitching(key: 'era' | 'whip' | 'k' | 'w' | 'hr' | 'war', ascending = false, minIp = MIN_IP_FOR_PITCHING) {
+	return [...careerPitching]
+		.filter((r) => r[key] !== undefined && (r.ip ?? 0) >= minIp)
+		.sort((a, b) => (ascending ? (a[key] as number) - (b[key] as number) : (b[key] as number) - (a[key] as number)))
+		.slice(0, 5)
+		.map((r) => ({ playerName: r.playerName, value: r[key] as number }));
+}
+
+// canonical franchise lineage — region names drift over the real timeline but these are the
+// same 4 divisions (NORTHWEST->NORTH, NORTHEAST->SEATTLE, MAGNOLIA->425's, QUEEN ANNE unchanged)
+const TEAM_LINEAGE: Record<string, string> = {
+	NORTHWEST: 'Northwest',
+	NORTH: 'Northwest',
+	NORTHEAST: 'Northeast',
+	SEATTLE: 'Northeast',
+	MAGNOLIA: "425's",
+	"425'S": "425's",
+	'QUEEN ANNE': 'Queen Anne',
+};
+
+const teamTitles = new Map<string, number>();
+for (const season of seasons) {
+	if (!season.data.championTeam) continue;
+	const canonical = TEAM_LINEAGE[season.data.championTeam.toUpperCase()] ?? season.data.championTeam;
+	teamTitles.set(canonical, (teamTitles.get(canonical) ?? 0) + 1);
+}
+const topTeams = [...teamTitles.entries()]
+	.sort((a, b) => b[1] - a[1])
+	.slice(0, 3)
+	.map(([team, value]) => ({ playerName: team, value }));
+
+const leaderCards = [
+	{ label: 'Top Batting Average', leaders: topFiveHitting('avg'), format: (v: number) => v.toFixed(3) },
+	{ label: 'Top Home Runs', leaders: topFiveHitting('hr'), format: (v: number) => `${v} HR` },
+	{ label: 'Top Runs', leaders: topFiveHitting('r'), format: (v: number) => `${v} R` },
+	{ label: 'Top RBI', leaders: topFiveHitting('rbi'), format: (v: number) => `${v} RBI` },
+	{ label: 'Top Strikeouts (Hitting)', leaders: topFiveHitting('k'), format: (v: number) => `${v} K` },
+	{ label: 'Top Hitting WAR', leaders: topFiveHitting('war'), format: (v: number) => `${v.toFixed(1)} WAR` },
+	{ label: 'Best ERA', leaders: topFivePitching('era', true), format: (v: number) => v.toFixed(2) },
+	{ label: 'Best WHIP', leaders: topFivePitching('whip', true), format: (v: number) => v.toFixed(2) },
+	{ label: 'Top Strikeouts (Pitching)', leaders: topFivePitching('k'), format: (v: number) => `${v} K` },
+	{ label: 'Most Wins', leaders: topFivePitching('w', false, 0), format: (v: number) => `${v} W` },
+	{ label: 'Most Home Runs Allowed', leaders: topFivePitching('hr', false, 0), format: (v: number) => `${v} HR` },
+	{ label: 'Top Pitching WAR', leaders: topFivePitching('war'), format: (v: number) => `${v.toFixed(1)} WAR` },
+];
+
+const subNavItems = [
+	{ label: 'Boroughs Career', href: '/boroughs/' },
+	...seasons.map((s) => ({ label: String(s.data.year), href: `/boroughs/${s.data.year}/` })),
+];
+---
+
+<BaseLayout title="Boroughs" subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">Boroughs</h1>
+	<p class="mb-6 text-ink-muted">Baseball, 2002–2015.</p>
+
+	<h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">All-time leaders</h2>
+
+	<a
+		href="#career"
+		class="mb-6 block rounded-lg border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-6 no-underline transition hover:border-brand hover:shadow-md"
+	>
+		<p class="mb-4 text-center text-xs font-semibold uppercase tracking-wide text-brand">Most Championships</p>
+		<div class="grid grid-cols-3 divide-x divide-gray-200">
+			{
+				[0, 1, 2].map((i) => (
+					<div class="px-4 text-center">
+						<RankBadge rank={i + 1} />
+						{topTeams[i] ? (
+							<Fragment>
+								<p class="mt-2 text-lg font-semibold text-ink">{topTeams[i].playerName}</p>
+								<p class="text-sm text-ink-muted">
+									{topTeams[i].value} title{topTeams[i].value === 1 ? '' : 's'}
+								</p>
+							</Fragment>
+						) : (
+							<p class="mt-2 text-sm text-ink-muted">—</p>
+						)}
+					</div>
+				))
+			}
+		</div>
+	</a>
+
+	<ul class="mb-8 grid gap-3 sm:grid-cols-3">
+		{
+			leaderCards.map((card) => (
+				<li>
+					<a
+						href="#career"
+						class="block h-full rounded-lg border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-4 no-underline transition hover:border-brand hover:shadow-md"
+					>
+						<p class="mb-2 text-xs font-semibold uppercase tracking-wide text-brand">{card.label}</p>
+						{card.leaders.length > 0 ? (
+							<ol class="space-y-1">
+								{card.leaders.map((leader, i) => (
+									<li class="flex items-baseline justify-between gap-2 text-sm whitespace-nowrap">
+										<span class="text-ink">
+											<span class="text-ink-muted">{i + 1}.</span> {leader.playerName}
+										</span>
+										<span class="shrink-0 text-ink-muted">{card.format(leader.value)}</span>
+									</li>
+								))}
+							</ol>
+						) : (
+							<p class="text-sm text-ink-muted">No data yet</p>
+						)}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+
+	<h2 id="career" class="mb-3 mt-8 scroll-mt-4 text-lg font-semibold">Career — Hitting</h2>
+	<BoroughsStatTable kind="hitting" byRegion={career.data.hittingByRegion} />
+
+	<h2 class="mb-3 mt-6 text-lg font-semibold">Career — Pitching</h2>
+	<BoroughsStatTable kind="pitching" byRegion={career.data.pitchingByRegion} />
+
+	<h2 class="mb-3 mt-6 text-lg font-semibold">Career — Overall</h2>
+	<BoroughsOverallTable rows={careerOverall} />
+</BaseLayout>

@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LawtonStatsTable from '../../components/tables/LawtonStatsTable.astro';
+
+const seasons = (await getCollection('lawtonSeasons')).sort((a, b) => b.data.year - a.data.year);
+const [career] = await getCollection('lawtonCareer');
+const careerStats = career.data.stats;
+
+const MIN_GAMES_FOR_SCORING_TITLE = 10;
+
+function topFive(key: 'rings' | 'ppg' | 'w' | 'plusMinus' | 'war', minGames = 0) {
+	return [...careerStats]
+		.filter((s) => s[key] !== undefined && (s.g ?? 0) >= minGames)
+		.sort((a, b) => (b[key] as number) - (a[key] as number))
+		.slice(0, 5)
+		.map((s) => ({ playerName: s.playerName, value: s[key] as number }));
+}
+
+const leaderCards = [
+	{
+		label: 'Top Scorers',
+		leaders: topFive('ppg', MIN_GAMES_FOR_SCORING_TITLE),
+		format: (v: number) => `${v.toFixed(1)} PPG`,
+	},
+	{ label: 'Most Wins', leaders: topFive('w'), format: (v: number) => `${v} wins` },
+	{ label: 'Best +/-', leaders: topFive('plusMinus'), format: (v: number) => `${v > 0 ? '+' : ''}${v}` },
+	{ label: 'Best WAR', leaders: topFive('war'), format: (v: number) => `${v.toFixed(1)} WAR` },
+];
+
+const subNavItems = [
+	{ label: 'Lawton Career', href: '/lawton/' },
+	...seasons.map((s) => ({ label: String(s.data.year), href: `/lawton/${s.data.year}/` })),
+];
+---
+
+<BaseLayout title="Lawton" subNavItems={subNavItems}>
+	<h1 class="mb-2 text-2xl font-bold">Lawton</h1>
+	<p class="mb-6 text-ink-muted">Basketball, 2010–2015.</p>
+
+	<h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-ink-muted">All-time leaders</h2>
+	<ul class="mb-8 grid gap-3 sm:grid-cols-2">
+		{
+			leaderCards.map((card) => (
+				<li>
+					<a
+						href="#career"
+						class="block h-full rounded-lg border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-4 no-underline transition hover:border-brand hover:shadow-md"
+					>
+						<p class="mb-2 text-xs font-semibold uppercase tracking-wide text-brand">{card.label}</p>
+						{card.leaders.length > 0 ? (
+							<ol class="space-y-1">
+								{card.leaders.map((leader, i) => (
+									<li class="flex items-baseline justify-between gap-2 text-sm whitespace-nowrap">
+										<span class="text-ink">
+											<span class="text-ink-muted">{i + 1}.</span> {leader.playerName}
+										</span>
+										<span class="shrink-0 text-ink-muted">{card.format(leader.value)}</span>
+									</li>
+								))}
+							</ol>
+						) : (
+							<p class="text-sm text-ink-muted">No data yet</p>
+						)}
+					</a>
+				</li>
+			))
+		}
+	</ul>
+
+	<h2 id="career" class="mb-3 scroll-mt-4 text-sm font-semibold uppercase tracking-wide text-ink-muted">
+		Career Stats
+	</h2>
+	<LawtonStatsTable stats={careerStats} showTeam={false} showTitles={true} />
+</BaseLayout>

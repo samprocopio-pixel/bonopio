@@ -1,0 +1,24 @@
+---
+interface Props {
+	slug: string;
+	title: string;
+	pubDate: Date;
+	summary?: string;
+}
+
+const { slug, title, pubDate, summary } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('en-US', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+});
+---
+
+<article class="border-b border-gray-200 py-6 first:pt-0">
+	<p class="text-sm text-ink-muted">{formattedDate}</p>
+	<h2 class="mt-1 text-xl font-semibold">
+		<a href={`/news/${slug}/`}>{title}</a>
+	</h2>
+	{summary && <p class="mt-2 text-ink-muted">{summary}</p>}
+</article>
