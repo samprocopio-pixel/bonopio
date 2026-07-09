@@ -102,6 +102,16 @@ const captionId = caption ? `table-caption-${caption.replace(/\s+/g, '-').toLowe
 			z-index: 1;
 		}
 
+		/* defensive 1px white overpaint trailing every sticky column except the last, guarding
+		   against any residual sub-pixel measurement variance across browsers/zoom/devices that
+		   would otherwise let scrolled content peek through as a hairline seam */
+		table[data-sticky-columns='2'] thead th:nth-child(1),
+		table[data-sticky-columns='2'] tbody td:nth-child(1),
+		table[data-sticky-columns='3'] thead th:nth-child(-n + 2),
+		table[data-sticky-columns='3'] tbody td:nth-child(-n + 2) {
+			box-shadow: 1px 0 0 0 white;
+		}
+
 		/* frozen-boundary shadow on the last sticky column, only when the table actually overflows */
 		table[data-sticky-columns='2'][data-overflowing] thead th:nth-child(2),
 		table[data-sticky-columns='2'][data-overflowing] tbody td:nth-child(2),
@@ -194,9 +204,10 @@ const captionId = caption ? `table-caption-${caption.replace(/\s+/g, '-').toLowe
 					table.tBodies[0]?.querySelectorAll<HTMLElement>(`tr > :nth-child(${i + 1})`).forEach((c) => {
 						c.style.left = `${left}px`;
 					});
-					// round up so subpixel measurement never leaves the next sticky column
-					// undershooting into this one (which would hide its content, e.g. the sort arrow)
-					left += Math.ceil(th.getBoundingClientRect().width);
+					// use the exact (unrounded) width — WebKit handles fractional sticky offsets
+					// fine, and rounding up here left a permanent sub-pixel gap trailing every
+					// sticky column, letting scrolled content peek through during scroll
+					left += th.getBoundingClientRect().width;
 				}
 				table.toggleAttribute('data-overflowing', wrapper.scrollWidth > wrapper.clientWidth);
 			};
