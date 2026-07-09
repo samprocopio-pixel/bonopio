@@ -66,12 +66,25 @@ const captionId = caption ? `table-caption-${caption.replace(/\s+/g, '-').toLowe
 
 <style is:global>
 	@layer base {
+		/* Safari/WebKit mis-paints borders/backgrounds at sticky-cell seams when the table uses
+		   border-collapse (WebKit bug 128486), and later sticky columns can fail to stick at all
+		   in the same combination — separate + zero spacing sidesteps it, no visual change here
+		   since cells only ever use border-bottom (no shared vertical borders to collapse). */
+		table[data-sticky-columns] {
+			border-collapse: separate;
+			border-spacing: 0;
+		}
+
 		table[data-sticky-columns='2'] thead th:nth-child(-n + 2),
 		table[data-sticky-columns='2'] tbody td:nth-child(-n + 2),
 		table[data-sticky-columns='3'] thead th:nth-child(-n + 3),
 		table[data-sticky-columns='3'] tbody td:nth-child(-n + 3) {
 			position: sticky;
 			background: white;
+			/* force each sticky cell onto its own compositing layer — the standard mitigation
+			   for Safari's sticky-positioning repaint glitches at column boundaries */
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
 		}
 
 		/* earlier (more leftward) sticky columns always paint above later ones, so a subpixel
