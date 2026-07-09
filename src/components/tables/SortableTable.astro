@@ -212,7 +212,12 @@ const captionId = caption ? `table-caption-${caption.replace(/\s+/g, '-').toLowe
 				table.toggleAttribute('data-overflowing', wrapper.scrollWidth > wrapper.clientWidth);
 			};
 
-			measure();
+			// defer the initial measurement past the next two paints — measuring immediately
+			// after initSortableTables()'s default-sort click can catch column widths before
+			// the browser has fully settled layout from that row-reordering reflow, silently
+			// capturing a too-narrow width and permanently mis-placing later sticky columns
+			requestAnimationFrame(() => requestAnimationFrame(measure));
+
 			let resizeTimer: ReturnType<typeof setTimeout>;
 			window.addEventListener('resize', () => {
 				clearTimeout(resizeTimer);
